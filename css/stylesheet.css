@@ -31,8 +31,8 @@ main h2 {
 .pfp {
     float: right;
     box-shadow: 0 0 17px black;
-    height: 100px;
-    width: 225px;
+    height: 150px;
+    width: 275px;
 }
 
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
