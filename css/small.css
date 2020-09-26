@@ -13,22 +13,20 @@ header, footer {
     background-color:#0c2f5c;
     color: #FFFFFF;
     padding: 8px;
-    border-radius: 15px;
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 24px;
     padding-left: 95px;
     font-family: 'Merriweather', serif;
 }
 
-main h2 {
+h2 {
+    font-size: 16px;
     border-bottom:  1px solid black;
 }
 
 .pfp {
-    float: right;
-    box-shadow: 0 0 17px black;
     height: 150px;
     width: 275px;
 }
