@@ -101,9 +101,10 @@ ul {
 
 li {
     list-style: none;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
     background-color: #0c2f5c;
+    color: #EEE;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
@@ -116,6 +117,22 @@ li a:link, li a:visited {
 
 li a:hover {
     color: #EEE;
+}
+
+.cont-1-img, .cont-3-img {
+    height: 500px;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #0c2f5c;
+}
+.cont-2-img {
+    height: 466px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom:40px;
+    border-bottom: 5px solid #0c2f5c;
 }
 
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
