@@ -1,13 +1,12 @@
-/* index page specific css. */
-
 body {
     background-color: #EEE;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-#main-index {
+main {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 header, footer {
@@ -17,14 +16,10 @@ header, footer {
     border-radius: 15px;
 }
 
-header h1 {
+h1 {
     font-size: 32px;
     padding-left: 95px;
     font-family: 'Merriweather', serif;
-}
-
-main {
-    padding: 0 15px;
 }
 
 main h2 {
@@ -57,19 +52,7 @@ footer p.legal {
 }
 
 footer p.updatehistory {
-    color: yellow;
+    color: orange;
     font-size: .8em;
     margin-top: 0;
 }
-
-/* Begin pricing page specific css. */ 
-
-#main-grid {
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: #f6f6f8;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  /* begin design-principles page specific css. */
