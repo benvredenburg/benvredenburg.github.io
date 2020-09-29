@@ -31,6 +31,14 @@ h2 {
     width: 275px;
 }
 
+li a:link, li a:visited {
+    color: #0c2f5c;
+}
+
+li a:hover {
+    color: black;
+}
+
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
     color: white;
 }
