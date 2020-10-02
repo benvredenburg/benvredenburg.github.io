@@ -1,19 +1,105 @@
 /* Testing */
 
-.name {
-    color:green;
-}
-
-
 /* End Testing */
 
+body {
+    background-color: #EEE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
+header, footer {
+    background-color:#0c2f5c;
+    color: #FFFFFF;
+    padding: 8px;
+}
 
+.index-name {
+    font-size: 24px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
 
+.index-title {
+    font-size: 22px;
+    border-bottom:  1px solid black;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: left;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+li {
+    font-size: 20px;
+}
+
+li a:link, li a:visited {
+    color: #0c2f5c;
+}
+
+li a:hover {
+    color: black;
+}
+
+.weather-logo {
+    width: 128px;
+    height: 128px;
+    padding-bottom: 40px;
+}
+
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
+    color: white;
+}
+
+footer a:hover {
+    color: #DDD;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+footer p.legal {
+    margin-bottom: 9px;
+    font-size: .9em;
+}
 
 footer p.updatehistory {
     color: orange;
     font-size: .8em;
     margin-top: 0;
+}
+
+
+@media only screen and (min-width: 32.5em) {
+
+    .index-name {
+        font-size: 32px;
+    }
+
+    .index-title {
+        font-size: 24px;
+    }
+
+    header, footer {
+        border-radius: 15px;
+    }
+
 }
