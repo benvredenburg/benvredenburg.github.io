@@ -17,6 +17,7 @@ header, footer {
     background-color:#0c2f5c;
     color: #FFFFFF;
     padding: 8px;
+    border-radius: 15px;
 }
 
 .index-name, .target-name, .type-name, .color-name {
@@ -202,18 +203,25 @@ footer p.updatehistory {
 }
 
 
-@media only screen and (min-width: 32.5em) {
+@media only screen and (max-width: 32.5em) {
 
-    .index-name {
+    .index-name, .target-name, .type-name, .color-name {
         font-size: 32px;
     }
 
-    .index-title {
+    .index-title,.target-title, .type-title, .color-title {
         font-size: 24px;
     }
 
+    .persona-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;    }
+
+
+
     header, footer {
-        border-radius: 15px;
+        border-radius: 0;
     }
 
 }
