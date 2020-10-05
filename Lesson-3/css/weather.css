@@ -59,6 +59,7 @@ h3 {
     padding-bottom: 5%;
     padding-left: 25px;
     margin: 0px;
+    
 }
 
 .a-1, .a-2, .a-3, .a-4, .a-5, .a-6, .a-7, .a-8 {
@@ -67,12 +68,14 @@ h3 {
     padding-left: 25px;
     margin: 0px;
     border: .5px solid black;
+    height: 150px;
+    width: 300px;
 }
 
 .persona-img {
     display: block;
     margin: auto;
-    width: 75%;
+    width: 150px;
     border: 3px solid black;
   }
 
@@ -203,7 +206,7 @@ footer p.updatehistory {
 }
 
 
-@media only screen and (max-width: 32.5em) {
+@media only screen and (max-width: 1050px) {
 
     .index-name, .target-name, .type-name, .color-name {
         font-size: 32px;
@@ -221,7 +224,7 @@ footer p.updatehistory {
 
 
     header, footer {
-        border-radius: 0;
+        border-radius: 0px;
     }
 
 }
