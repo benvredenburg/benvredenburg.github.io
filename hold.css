@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: Verdana, sans-serif;
+    line-height: 1.5rem;
+}
+
+h2 {
+    color: #0C2F5C;
+}
+
+header {
+    background-color: #0C2F5C;
+}
+
+#heading {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'Merriweather', sans-serif;
+}
+
+#motto {
+    color: white;
+    font-size: .7rem;
+    line-height: 1rem;
+}
+
+#logo, #heading {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    color: #F97D00;
+}
+
+#logo {
+    height: 5rem;
+}
+
+nav {
+    color: white;
+    background-color: #0C2F5C;
+    font-size: 1.3em;
+    line-height: 3rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    color: #F97D00;
+}
+
+li:hover {
+    background-color: #6A7B76;
+}
+
+li:hover a {
+    color: #0C2F5C;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#preston-hero {
+    position: relative;
+    width: 500px;
+}
+
+#weather-summary {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    line-height: 1.5rem;
+    border: 1px solid black;
+}
+
+#fiveday {
+    position: relative;
+    width: 500px;
+}
+
+ #forecast-img {
+     width: 100%;
+ }
+
+#weather-article {
+    position: relative;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: left;
+    border: 1px solid black;
+}
+
+#weather-article h2, #weather-article p {
+    padding-left: 10px;
+}
+
+ #art-img {
+     width: 100%;
+ }
+
+ #contact {
+     position: relative;
+     width: 500px;
+     display: flex;
+     flex-grow: row wrap;
+     justify-content: space-around;
+     color: #F97D00;
+     background-color: #0C2F5C;
+     font-size: 1rem;
+     line-height: 1.5rem;
+     font-family: 'Merriweather', sans-serif;
+     padding: 1rem;
+ }
+
+ #map {
+     max-width: 100%;
+     height:auto;
+     box-shadow: 2px 2px 5px grey;
+ }
+
+ #legal {
+     color: #F97D00;
+     background-color: #0C2F5C;
+     font-size: 1rem;
+     line-height: 1rem;
+ }
+
+ #legal a {
+     color: white;
+ }
+
+
+
+
+
+
+
+
+/*header {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    background-color: #87BC8A;
+}
+
+.weather-logo {
+    grid-column: 1;
+    grid-row: 1;
+    width: 50px;
+}
+
+#sitename {
+    grid-column: 2;
+    grid-row: 1;
+    font-size:18px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+#motto {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 12px;
+    margin-bottom:0;
+    margin-top: 25px;
+    padding-left: 25px;
+}
+
+nav button {
+    grid-column: 3;
+    grid-row: 1;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav {
+    font-family: Verdana, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255, 0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2); 
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    display: grid;
+
+}
+
+#preston-cont-1 {
+    border: 1px solid black;
+    background-color: lightgrey;
+}
+
+.placeholder-img-1 {
+    width: 100%;
+    height: 100px;
+}
+
+.preston-cont-header {
+    margin: 0;
+    padding-left: 15px;
+
+}
+
+.weath-summ li {
+    display: inline;
+    border: 1px solid black;
+    list-style: none;
+    
+}
+*/
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* 35em is also 560px when basefont is 16px */
+/*        @media only screen and (min-width: 35rem) {
+
+            nav {
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff3232+0,aa0000+100 */
+ /*       background: #ff3232; /* Old browsers */
+ /*       background: -moz-linear-gradient(top,  #ff3232 0%, #aa0000 100%); /* FF3.6-15 */
+ /*      background: -webkit-linear-gradient(top,  #ff3232 0%,#aa0000 100%); /* Chrome10-25,Safari5.1-6 */
+ /*       background: linear-gradient(to bottom,  #ff3232 0%,#aa0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+
+    /*        }
+
+    
+
+} /*end medium */
+
+/* 64em is also 1028px when basefont is 16px */
+/*@media only screen and (min-width: 64rem) {
+    
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .6rem 1rem;
+    }
+
+} /*end large */

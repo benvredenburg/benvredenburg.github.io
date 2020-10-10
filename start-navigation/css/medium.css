@@ -1,0 +1,16 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    nav {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff3232+0,aa0000+100 */
+background: #ff3232; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff3232 0%, #aa0000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ff3232 0%,#aa0000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ff3232 0%,#aa0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    
+
+} /*end medium */
