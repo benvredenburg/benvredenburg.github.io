@@ -261,13 +261,13 @@ footer {
 }
 
 ul li {
-    display: inline;
+    display: inline!important;
     padding:20px;
     font-size: 18px;
 }
 
 ul li:first-child {
-    display: none;
+    display: none!important;
 }
 
 ul li:hover a {

@@ -63,3 +63,12 @@ footer p.updatehistory {
     font-size: .8em;
     margin-top: 0;
 }
+
+.banner {
+    text-align: center;
+    border: 4px double white;
+    background-color: #0c2f5c;
+    color: orange;
+    margin-bottom: 15px;
+    padding: 10px;
+}
