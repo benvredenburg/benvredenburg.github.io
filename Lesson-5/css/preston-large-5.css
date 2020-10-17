@@ -4,12 +4,12 @@
 
     .header-cont {
       background: linear-gradient(90deg,white 0%, transparent 0%);
-      grid-template-columns: 100px 1fr;
-
+      grid-template-columns: 200px 1fr;
     }
     
     .logo img {
       max-width: 100px;
+      padding-left: 4em;
     }
     
     .sub-cont h1 {
