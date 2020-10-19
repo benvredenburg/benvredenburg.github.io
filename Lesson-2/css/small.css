@@ -4,7 +4,7 @@ body {
 }
 
 main {
-    max-width: 1440px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -49,6 +49,8 @@ footer a:hover {
 }
 
 footer {
+    max-width: 960px;
+    margin: 0 auto;
     clear: both;
     text-align: center;
 }
