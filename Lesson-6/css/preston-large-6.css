@@ -73,7 +73,6 @@
       grid-column: 1/-1;
       grid-row: 1/2;
       z-index: 1;
-      height: 100%;
     }
 
     .weather-summary-sub-cont {
@@ -83,7 +82,7 @@
       margin: 5em ;
       padding: 1em;
       text-align: center;
-      height: 365px;
+      height: 265px;
       width: 250px;
       background-color: rgb(12, 47, 92, .8);
       color: white;
@@ -116,7 +115,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 0 auto;
-        max-width: 1440px;
         margin-bottom: 15px;;
     }
 
