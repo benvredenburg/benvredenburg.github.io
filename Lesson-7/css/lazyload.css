@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+picture img[data-src] {
+    filter: blur(.2em);
+}
+
+picture img {
+    filter: blur(0em);
+    transition: filter .5s;
+}
