@@ -1,8 +1,6 @@
 @media screen and (min-width: 886px) {
     /* large */
 
-@media screen and (min-width: 886px){
-
     .header-cont {
       background: linear-gradient(90deg,white 0%, transparent 0%);
       grid-template-columns: 200px 1fr;
@@ -120,5 +118,4 @@
       max-width: 36px;
     }   
 
-    }
 }
