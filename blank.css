@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    font-size: 24px;
+    font-family: Ubuntu, sans-serif;
+}
+
+table {
+    border: 1px solid lightgray;
+    margin: 0 auto;
+    margin-bottom: 0;
+    box-shadow: 10px 10px 10px #628ca6;
+    background-color: #e7f0ed;
+}
+
+table thead tr {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    background-color: #7fb9c2;
+    border: 1px solid lightgray;
+}
+
+.highlight {
+    background-color: #628ca6;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    border: 1px solid lightgray;
+    padding: 5px 15px 5px 15px;
+}
+
+table tbody tr:nth-child(odd) td {
+    background-color: green;
+}
+
+table tbody tr td {
+    padding: 0 5px 0 5px;
+    border: 1px solid lightgray;
+    font-weight: lighter;
+}
+
+table tfoot tr td{
+    background-color: #7fb9c2;
+    font-size: 16px;
+    padding: 10px;
+}
