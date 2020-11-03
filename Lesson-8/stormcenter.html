@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang='en-us'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='description' content='Vredenburg Forecast'>
+    <link rel='stylesheet' href='../Lesson-1/css/normalize.css'>
+    <link href='css/stormsmall.css' rel='stylesheet'>
+    <link href='css/stormmed.css' rel='stylesheet'>
+    <link href='css/stormlarge.css' rel='stylesheet'>
+    <script src='js/stormcenter.js'></script>
+    <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap' rel='stylesheet'>
+    <link rel='shortcut icon' href='../Lesson-5/images/favicon.ico'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Storm Center</title>
+</head>
+
+<body>
+    <header>
+        <container class='header-cont'>
+            <section class='logo'>
+                <img src='../Lesson-5/images/weathericon.png' alt='Logo' class='main-logo-image'>
+            </section>
+            <section class='sub-cont'>
+                <h1>Vredenburg Forecast</h1>
+                <h3>Whatever the weather, we've got you covered</h3>
+            </section>
+        </container>
+        <nav class='main-nav'>
+            <ul class='nav-children'>
+                <li><a href='#' onclick='responsive()'><span></span><span></span><span></span><span
+                            class='clicker'></span></a></li>
+                <li><a href='../Lesson-1/index.html'>Home</a></li>
+                <li><a href='../Lesson-6/preston-6.html'>Preston</a></li>
+                <li><a href='#'>Soda Springs</a></li>
+                <li><a href='#'>Fish Haven</a></li>
+                <li class='active'><a href='#'>Storm Center</a></li>
+                <li><a href='../Lesson-7/gallery-7.html'>Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id='banner' style='display:block;'>
+        <h2><i>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</i></h2>
+    </div>
+    <main>
+        <form action='thanks.html'>
+            <h2 class='contact'>Contact Information</h2>
+            <label for='name'>Full Name (ex: John Doe):</label>
+            <input type='text' id='name' name='name' minlength='2' maxlength='50' size='20' pattern='[A-Za-z][A-Za-z]+ [A-Za-z][A-Za-z]+' required>
+            <label for='email'>Email Address:</label>
+            <input type='email' id='email' name='email' placeholder='address@domain.com' size='20'>
+            <label for='phone'>Phone Number (10 digit):</label>
+            <input type='tel' id='phone' name='phone' minlength='10' size='20' required>
+            <label for='zip'>ZIP Code</label>
+            <input type='number' id='zip' name='zip' minlength='5' size='20' required>
+            <h2 class='report'>Storm Report</h2>
+            <label for='date'>Storm Date:</label>
+            <input type='date' id='date' name='date' size='20'>
+            <label for='type'>Storm Type:</label>
+            <input list='storm-type' id='type' name='type' required>
+            <datalist id='storm-type'>
+                <option value='Flash Flood'></option>
+                <option value='Hail'></option>
+                <option value='Hurricane'></option>
+                <option value='Thunderstorm'></option>
+                <option value='Tornado'></option>
+                <option value='Other (comment below)'></option>
+            </datalist>
+            <label for='rating'>Severity (1 - 10):</label>
+            <input type='range' id='rating' value='5' min='1' max='10' step='1' oninput='adjustRating(this.value)' onchange='adjustRating(this.value)'>
+            <br>
+            <span id='ratingvalue'>5</span>
+            <label for='region'>Region:</label>
+            <select id='region'>
+                <option selected disabled>Select Region</option>
+                <option value='Preston'>Preston</option>
+                <option value='sodasprings'>Soda Springs</option>
+                <option value='fishhaven'>Fish Haven</option>
+            </select>
+            <p>Are you in danger?</p>
+            <div class='radio'>
+                <div class='radiobutton'>
+                    <label for='yes'>Yes:</label>
+                    <input type='radio' id='yes' name='danger' value='yes' checked>
+                </div>
+                <div class='radiobutton'>
+                    <label for='maybe'>Maybe:</label>
+                    <input type='radio' id='maybe' name='danger' value='maybe'>
+                </div>
+                <div class='radiobutton'>
+                    <label for='no'>No:</label>
+                    <input type='radio' id='no' name='danger' value='no'>
+                </div>
+            </div>
+            <div class='textfield'>
+                <textarea name='comments' rows='10' cols='40' max='500' placeholder='Additional Comments or Details (max 500 characters):'></textarea>
+            </div>
+            <input type='submit' class='button' value='Send Report'>
+        </form>
+    </main>
+
+    <footer>
+        <section class='legal-footer'>
+            <p class='legal'>&copy; <span id='copyrightyear'></span> | Benjamin Vredenburg | Idaho | <a target='_blank' href='https://www.byui.edu'>BYUI</a></p>
+            <p class='updatehistory'>Last Updated: <span id='lastupdated'></span></p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
