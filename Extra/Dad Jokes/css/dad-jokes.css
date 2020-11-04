@@ -17,3 +17,9 @@
 #dad-joke.small {
     font-size: 35px;
 }
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+}
