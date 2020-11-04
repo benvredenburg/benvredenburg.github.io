@@ -7,7 +7,7 @@ body {
 table {
     border: 1px solid lightgray;
     margin: 0 auto;
-    margin-bottom: 0;
+    margin-top: 50px;
     box-shadow: 10px 10px 10px #628ca6;
     background-color: #e7f0ed;
 }
@@ -32,7 +32,6 @@ table thead tr {
 table tbody tr:nth-child(even) {
     background-color: #e7ffed;
 }
-
 
 table tbody tr td {
     padding: 5px;
