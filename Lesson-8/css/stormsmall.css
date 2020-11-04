@@ -136,6 +136,11 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    color: #0C2F5C;
+    text-align: center;
+}
+
 .contact {
     grid-row: 1;
     grid-column: 1/-1;
@@ -199,7 +204,7 @@ textarea {
 
 .legal-footer {
     background-color: #0C2F5C;
-    padding: 20px;
+    padding: 5px;
     font-size: 14px;
 }
 
