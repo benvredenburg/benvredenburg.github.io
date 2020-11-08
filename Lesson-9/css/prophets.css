@@ -1,0 +1,88 @@
+/* Small */
+
+body {
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+header {
+    background-color: #0C2F5C;
+    padding: 10px 0 2px 0;
+    font-size: 26px;
+    color: #F97D00;
+    text-align: center;
+}
+
+header h1 {
+    border-bottom: 2px solid #F97D00;
+}
+
+main {
+    border: 10px solid whitesmoke;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 10px 10px 10px #628ca6;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+.cards section {
+    border: 1px solid black;
+    background-color: rgb(222, 211, 235);
+}
+
+.cards section h2 {
+    color: rgb(56, 45, 214);
+    font-weight: bolder;
+}
+
+.cards img {
+    width: 85%;
+    max-width: 385px;
+}
+
+footer {
+    background-color: #0C2F5C;
+    padding: 5px;
+    font-size: 14px;
+}
+
+footer p {
+    font-family: "Merriweather Sans", sans-serif;
+    color: #F97D00;
+    text-align: center;
+}
+
+
+/* Small-Medium */
+
+@media screen and (min-width: 500px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* Medium */
+
+@media screen and (min-width: 886px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/* Large */
+
+@media screen and (min-width: 1300px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
