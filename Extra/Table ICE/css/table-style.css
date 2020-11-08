@@ -1,0 +1,54 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.head {
+    background-color: lightslategray;
+    text-align: left;
+}
+
+th {
+    padding-left: 20px;
+}
+
+.users {
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tbody tr:hover {
+    background-color: lightblue;
+}
+
+td {
+    padding: 20px;
+}
+
+.active i {
+    color: green;
+    font-size: 15px;
+}
+
+.active {
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.waiting i {
+    color: orange;
+    font-size: 15px;
+}
+
+.waiting {
+    background-color: yellow;
+    border-radius: 15px;
+    padding: 10px;
+}
