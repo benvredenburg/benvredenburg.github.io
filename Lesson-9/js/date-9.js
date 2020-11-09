@@ -1,7 +1,3 @@
-function hamburgerMenu() {
-    document.getElementsByClassName('menu')[0].classList.toggle('responsive');
-}
-
 window.addEventListener('load', (event) => {
     const cd = document.querySelector('#lastupdated');
     let day = [
@@ -24,7 +20,7 @@ window.addEventListener('load', (event) => {
         'August',
         'September',
         'October',
-        'Novemeber',
+        'November',
         'December'
     ]
     cd.textContent = day[new Date().getDay()] + ', ' + new Date().getDate() + ' ' + month[new Date().getMonth()] + ' ' + new Date().getFullYear();
@@ -33,6 +29,7 @@ window.addEventListener('load', (event) => {
     const cry = document.querySelector('#copyrightyear');
     cry.textContent = new Date().getFullYear();
 
+    // Banner JS
     const bd = document.querySelector('#banner');
     today = new Date().getDay();
     if (today != 5) {

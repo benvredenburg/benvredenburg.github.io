@@ -6,9 +6,11 @@
     <meta name='description' content='Vredenburg Forecast'>
     <link rel='stylesheet' href='../Lesson-1/css/normalize.css'>
     <link href='css/preston-small-6.css' rel='stylesheet'>
+    <link href='css/preston-med-6.css' rel='stylesheet'>
     <link href='css/preston-large-6.css' rel='stylesheet'>
-    <script src='../Lesson-5/js/preston.js'></script>
-    <script src='../Lesson-5/js/windchill.js'></script>
+    <script src='../Lesson-9/js/hamburgermenu-9.js'></script>
+    <script src='../Lesson-9/js/date-9.js'></script>
+    <script src='../Lesson-9/js/windchill-9.js'></script>
     <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap' rel='stylesheet'>
     <link rel='shortcut icon' href='../Lesson-5/images/favicon.ico'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -17,44 +19,38 @@
 
 <body>
     <header>
-        <container class='header-cont'>
-            <section class='logo'>
-                <img src='../Lesson-5/images/weathericon.png' alt='Logo' class='main-logo-image'>
-            </section>
-            <section class='sub-cont'>
-                <h1>Vredenburg Forecast</h1>
-                <h3>Whatever the weather, we've got you covered</h3>
-            </section>
-        </container>
-        <nav class='main-nav'>
-            <ul class='nav-children'>
-                <li><a href='#' onclick='responsive()'><span></span><span></span><span></span><span
-                            class='clicker'></span></a></li>
-                <li><a href='../Lesson-1/index.html'>Home</a></li>
-                <li class='active'><a href='#'>Preston</a></li>
-                <li><a href='#'>Soda Springs</a></li>
-                <li><a href='#'>Fish Haven</a></li>
-                <li><a href='../Lesson-8/stormcenter.html'>Storm Center</a></li>
-                <li><a href='../Lesson-7/gallery-7.html'>Gallery</a></li>
-            </ul>
-        </nav>
+        <img src='../Lesson-5/images/weathericon.png' alt='Logo' class='logo'>
+        <section class='headings'>
+            <h1>Vredenburg Forecast</h1>
+            <div class='motto'>Whatever the weather, we've got you covered</div>
+        </section>
     </header>
+    <nav>
+        <div id='cursor'><a id='menu-link' onclick='hamburgerMenu()'>☰ Menu</a></div>
+        <ul class='menu'>
+            <li><a href='../Lesson-9/index.html'>Home</a></li>
+            <li id='active'><a href='preston-6.html'>Preston</a></li>
+            <li><a href='#'>Soda Springs</a></li>
+            <li><a href='#'>Fish Haven</a></li>
+            <li><a href='../Lesson-8/stormcenter.html'>Storm Center</a></li>
+            <li><a href='../Lesson-7/gallery-7.html'>Gallery</a></li>
+        </ul>
+    </nav>
+
     <div id='banner' style='display:block;'>
         <h2><i>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</i></h2>
     </div>
     <main>
-        <section class='city'>
-            <h2>
-                PRESTON, IDAHO
-            </h2>
-        </section>
-        <section class='weather-summary-cont'>
+        <h1>
+            PRESTON, IDAHO
+        </h1>
+        <section class='hero-container'>
             <picture class='hero-image'>
                 <source media='(max-width: 500px)' srcset='images/hero-img500.jpg'>
                 <source media='(max-width: 800px)' srcset='images/hero-img800.jpg'>
                 <img src='images/hero-img1100.jpg' alt='hero-img'>
             </picture>
-            <section class='weather-summary-sub-cont'>
+            <section class='weather-summary-container'>
                 <h2>
                     Weather Summary
                 </h2>
@@ -66,65 +62,56 @@
             </section>
         </section>
         <section class='five-day-forecast'>
-            <h2>
+            <h3>
                 Five Day Forecast
-            </h2>
-            <section class='forecast-cont'>
-                <container class='forecast-sub-cont'>
-                    <div class='day'>
-                        <p class='weekday'>Mon</p>
-                        <p class='temp'>60℉</p>
-                    </div>
-                    <div class='day'>
-                        <p class='weekday'>Tues</p>
-                        <p class='temp'>58℉</p>
-                    </div>
-                    <div class='day'>
-                        <p class='weekday'>Wed</p>
-                        <p class='temp'>57℉</p>
-                    </div>
-                    <div class='day'>
-                        <p class='weekday'>Thurs</p>
-                        <p class='temp'>53℉</p>
-                    </div>
-                    <div class='day'>
-                        <p class='weekday'>Fri</p>
-                        <p class='temp'>51℉</p>
-                    </div>
-                </container>
-            </section>
+            </h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                    <tr>
+                        <td>High: 55°</td>
+                        <td>High: 42°</td>
+                        <td>High: 61°</td>
+                        <td>High: 70°</td>
+                        <td>High: 33°</td>
+                    </tr>
+                    <tr>
+                        <td>Partly Cloudy</td>
+                        <td>Rain</td>
+                        <td>Partly CLoudy</td>
+                        <td>Sun</td>
+                        <td>Snow</td>
+                    </tr>
+                    <tr>
+                        <td>Low: 33°</td>
+                        <td>Low: 28°</td>
+                        <td>Low: 49°</td>
+                        <td>Low: 58°</td>
+                        <td>Low: 12°</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-        <section class='article'>
-            <picture>
+        <article>
             <img class='art-img' src='../Lesson-5/images/fall.jpg' alt='art-img'>
-            </picture>
-            <section>
-                <h3>Days of Summer make way for Fall</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar nisi id efficitur rutrum.
-                    Nunc sodales congue magna, venenatis sodales turpis suscipit nec. Nullam facilisis vulputate magna
-                    sit amet congue. Nullam in enim elit. In vitae congue mauris, venenatis pretium ipsum. Quisque et
-                    gravida turpis. Pellentesque quis tortor et lectus tempus blandit ut id justo. Sed viverra diam a
-                    eros gravida gravida in eget elit. Phasellus mollis et velit a condimentum. Nulla eleifend imperdiet
-                    convallis. Nullam vel lacus elit. Fusce posuere quam a orci consectetur pellentesque. Donec a nisl
-                    eget mi pretium accumsan ut ac erat. Donec aliquet malesuada ex a bibendum. Cras nec sem ac tortor
-                    accumsan auctor sed sit amet ex.
-
-                    Nulla mattis pharetra sapien ac dapibus. Proin tristique diam ipsum, ac vehicula felis cursus eu.
-                    Maecenas quis ultrices odio, in condimentum mi. Donec sit amet libero nec orci tincidunt suscipit.
-                    Sed tortor ex, tristique congue cursus vitae, molestie non libero. Duis vestibulum nisl nec purus
-                    hendrerit vulputate. Donec dui mauris, vehicula sollicitudin turpis id, porta sagittis metus.
-                    Quisque porta, mauris vehicula malesuada molestie, mi justo tempor ex, non maximus velit eros vitae
-                    purus. Suspendisse rhoncus congue sapien eget imperdiet. Integer feugiat, orci non pulvinar
-                    scelerisque, quam elit luctus dui, condimentum commodo quam nunc eget leo. Duis fermentum sed nibh
-                    sed feugiat.
-
-                    Nullam tempus sem nec tellus ultricies, non maximus est posuere. Nunc molestie augue nisi, ac congue
-                    ipsum commodo vel. Pellentesque imperdiet accumsan nibh vitae bibendum. Nunc aliquet mattis
-                    lobortis. In hac habitasse platea dictumst. Curabitur tortor.
-                </p>
-            </section>
-        </section>
+            <h2>Days of Summer make way for Fall</h2>
+            <h4>by Benjamin Vredenburg</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar nisi id efficitur rutrum. Nunc sodales congue magna, venenatis sodales turpis suscipit nec. Nullam facilisis vulputate magna sit amet congue. Nullam in enim elit. In vitae congue
+                mauris, venenatis pretium ipsum. Quisque et gravida turpis. Pellentesque quis tortor et lectus tempus blandit ut id justo. Sed viverra diam a eros gravida gravida in eget elit. Phasellus mollis et velit a condimentum. Nulla eleifend imperdiet
+                convallis. Nullam vel lacus elit. Fusce posuere quam a orci consectetur pellentesque. Donec a nisl eget mi pretium accumsan ut ac erat. Donec aliquet malesuada ex a bibendum. Cras nec sem ac tortor accumsan auctor sed sit amet ex. Nulla
+                mattis pharetra sapien ac dapibus. Proin tristique diam ipsum, ac vehicula felis cursus eu. Maecenas quis ultrices odio, in condimentum mi. Donec sit amet libero nec orci tincidunt suscipit. Sed tortor ex, tristique congue cursus vitae,
+                molestie non libero. Duis vestibulum nisl nec purus hendrerit vulputate. Donec dui mauris, vehicula sollicitudin turpis id, porta sagittis metus. Quisque porta, mauris vehicula malesuada molestie, mi justo tempor ex, non maximus velit
+                eros vitae purus. Suspendisse rhoncus congue sapien eget imperdiet. Integer feugiat, orci non pulvinar scelerisque, quam elit luctus dui, condimentum commodo quam nunc eget leo. Duis fermentum sed nibh sed feugiat. Nullam tempus sem nec
+                tellus ultricies, non maximus est posuere. Nunc molestie augue nisi, ac congue ipsum commodo vel. Pellentesque imperdiet accumsan nibh vitae bibendum. Nunc aliquet mattis lobortis. In hac habitasse platea dictumst. Curabitur tortor.
+            </p>
+        </article>
     </main>
 
     <footer>
@@ -145,8 +132,7 @@
 
 
         <section class='legal-footer'>
-            <p class='legal'>&copy; <span id='copyrightyear'></span> | Benjamin Vredenburg | Idaho | <a target='_blank'
-                    href='https://www.byui.edu'>BYUI</a></p>
+            <p class='legal'>&copy; <span id='copyrightyear'></span> | Benjamin Vredenburg | Idaho | <a target='_blank' href='https://www.byui.edu'>BYUI</a></p>
             <p class='updatehistory'>Last Updated: <span id='lastupdated'></span></p>
         </section>
     </footer>
