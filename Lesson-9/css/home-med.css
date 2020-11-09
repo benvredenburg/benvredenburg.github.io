@@ -1,3 +1,5 @@
+/* Medium */
+
 @media screen and (min-width: 601px) {
     header {
         display: grid;
@@ -21,52 +23,6 @@
     .motto {
         font-size: 1rem;
         line-height: 2rem;
-    }
-    .hero-container {
-        position: relative;
-        width: 75%;
-        margin: auto;
-    }
-    .weather-summary-container p {
-        font-size: .8em;
-    }
-    .five-day-forecast {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        background-color: #0C2F5C;
-        position: relative;
-        width: 35rem;
-        margin: auto;
-        margin-top: 70px;
-    }
-    table {
-        background-color: white;
-        margin: 1.5rem;
-        border: .2rem solid white;
-    }
-    th {
-        background-color: #6A7B76;
-        padding: 1.5rem;
-        font-size: 1rem;
-    }
-    td {
-        padding: .2rem;
-    }
-    .five-day-forecast h3 {
-        color: #F97D00;
-        padding-top: 15px;
-    }
-    article {
-        width: 70%;
-        text-align: left !important;
-    }
-    .art-img {
-        margin: 1rem;
-        float: right;
-        padding-right: 0px;
-        box-shadow: 1rem 1rem .5rem black;
-        width: 18rem;
     }
     .contact {
         display: grid;

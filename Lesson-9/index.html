@@ -5,10 +5,13 @@
     <meta charset='utf-8'>
     <meta name='description' content='Vredenburg Forecast'>
     <link rel='stylesheet' href='../Lesson-1/css/normalize.css'>
-    <link href='../Lesson-6/css/preston-small-6.css' rel='stylesheet'>
-    <link href='../Lesson-6/css/preston-large-6.css' rel='stylesheet'>
-    <script src='../Lesson-5/js/preston.js'></script>
-    <script src='../Lesson-5/js/windchill.js'></script>
+    <link href='css/home-small.css' rel='stylesheet'>
+    <link href='css/home-med.css' rel='stylesheet'>
+    <link href='css/home-large.css' rel='stylesheet'>
+    <script src='js/hamburgermenu-9.js'></script>
+    <script src='js/date-9.js'></script>
+    <script src='js/slides-9.js' defer></script>
+    <script src='js/towndata.js'></script>
     <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap' rel='stylesheet'>
     <link rel='shortcut icon' href='../Lesson-5/images/favicon.ico'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -16,33 +19,84 @@
 </head>
 
 <body>
+
     <header>
-        <container class='header-cont'>
-            <section class='logo'>
-                <img src='../Lesson-5/images/weathericon.png' alt='Logo' class='main-logo-image'>
-            </section>
-            <section class='sub-cont'>
-                <h1>Vredenburg Forecast</h1>
-                <h3>Whatever the weather, we've got you covered</h3>
-            </section>
-        </container>
-        <nav class='main-nav'>
-            <ul class='nav-children'>
-                <li><a href='#' onclick='responsive()'><span></span><span></span><span></span><span
-                            class='clicker'></span></a></li>
-                <li class='active'><a href='../Lesson-9/index.html'>Home</a></li>
-                <li><a href='#'>Preston</a></li>
-                <li><a href='#'>Soda Springs</a></li>
-                <li><a href='#'>Fish Haven</a></li>
-                <li><a href='../Lesson-8/stormcenter.html'>Storm Center</a></li>
-                <li><a href='../Lesson-7/gallery-7.html'>Gallery</a></li>
-            </ul>
-        </nav>
+        <img src='../Lesson-5/images/weathericon.png' alt='Logo' class='logo'>
+        <section class="headings">
+            <h1>Vredenburg Forecast</h1>
+            <div class="motto">Whatever the weather, we've got you covered</div>
+        </section>
     </header>
+
+    <nav>
+        <div id='cursor'><a id='menu-link' onclick='hamburgerMenu()'>☰ Menu</a></div>
+        <ul class='menu'>
+            <li id='active'><a href='index.html'>Home</a></li>
+            <li><a href='preston-6.html'>Preston</a></li>
+            <li><a href='#'>Soda Springs</a></li>
+            <li><a href='#'>Fish Haven</a></li>
+            <li><a href='../Lesson-8/stormcenter.html'>Storm Center</a></li>
+            <li><a href='../Lesson-7/gallery-7.html'>Gallery</a></li>
+        </ul>
+    </nav>
     <div id='banner' style='display:block;'>
         <h2><i>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</i></h2>
     </div>
     <main>
+        <div class="home-content-wrap">
+            <div class="item1">
+                <iframe src="https://www.google.org/crisismap/weather_and_events?hl=en&llbox=43.166%2C41.94%2C-110.862%2C-114.625&t=ROADMAP&layers=30%2C1%2C31%2C32%2C1340721332252%3A49%2C20%2C12%2Clayer9%2C2%2Clayer1%2C3%3A100"></iframe>
+            </div>
+            <div class="advisory">
+                <h2>Live Map</h2>
+                <h3>Provided by Google</h3>
+                <p>Please be advised of local weather conditions.</p>
+                <p>Use the Layers tab to filter map for clouds, percipitation, and storm information.</p>
+            </div>
+            <div class="item2 town-data">
+                <img src="images/preston.jpg" alt="The City of Preston, ID">
+            </div>
+            <div class="item3 town-data">
+                <img src="images/sodasprings.jpg" alt="Bear Lake, near Soda Springs, ID">
+            </div>
+            <div class="item4 town-data">
+                <img src="images/fishhaven.jpg" alt="The City of Preston, ID">
+            </div>
+        </div>
+        <h1>Gallery Spotlight</h1>
+
+        <div class="spotlight">
+            <span class="prev" onclick="plusSlides(-1)">&#9664;</span> <span class="next" onclick="plusSlides(1)">&#9654;</span>
+
+            <div class="image-subtitle-wrap">
+                <div class="mySlides fade">
+                    <img src="../Lesson-7/images/tornado.jpg" alt="Tornado">
+                    <br>
+                    <p>Tornado touching down</p>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../Lesson-7/images/mist.jpg" alt="mist">
+                    <br>
+                    <p>Mist over a forest</p>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../Lesson-7/images/lightning2.jpg" alt="lightning">
+                    <br>
+                    <p>Lightning on the plains</p>
+                </div>
+            </div>
+            <br>
+            <button onclick="window.location.href='../Lesson-7/gallery-7.html'">Gallery</button>
+        </div>
+        <br>
+        <div class="button-box">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
 
     </main>
 
@@ -51,7 +105,7 @@
             <h3>
                 Contact Information
             </h3>
-            <p class='adress'> 📍 555 Main Avenue, Preston, ID 83440</p>
+            <p class='adress'>📍 555 Main Avenue, Preston, ID 83440</p>
             <p class='email'>✉ contact@vredenburgforecast.news</p>
             <p class='phone'>☎ (555)555-5555</p>
             <img class='map' src='../Lesson-5/images/prestonmap.jpg' alt='map'>
