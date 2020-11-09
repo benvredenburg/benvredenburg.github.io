@@ -9,7 +9,8 @@
     <link href='css/stormsmall.css' rel='stylesheet'>
     <link href='css/stormmed.css' rel='stylesheet'>
     <link href='css/stormlarge.css' rel='stylesheet'>
-    <script src='js/stormcenter.js'></script>
+    <script src='../Lesson-9/js/hamburgermenu-9.js'></script>
+    <script src='../Lesson-9/js/date-9.js'></script>
     <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap' rel='stylesheet'>
     <link rel='shortcut icon' href='../Lesson-5/images/favicon.ico'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -18,28 +19,24 @@
 
 <body>
     <header>
-        <container class='header-cont'>
-            <section class='logo'>
-                <img src='../Lesson-5/images/weathericon.png' alt='Logo' class='main-logo-image'>
-            </section>
-            <section class='sub-cont'>
-                <h1>Vredenburg Forecast</h1>
-                <h3>Whatever the weather, we've got you covered</h3>
-            </section>
-        </container>
-        <nav class='main-nav'>
-            <ul class='nav-children'>
-                <li><a href='#' onclick='responsive()'><span></span><span></span><span></span><span
-                            class='clicker'></span></a></li>
-                <li><a href='../Lesson-1/index.html'>Home</a></li>
-                <li><a href='../Lesson-6/preston-6.html'>Preston</a></li>
-                <li><a href='#'>Soda Springs</a></li>
-                <li><a href='#'>Fish Haven</a></li>
-                <li class='active'><a href='stormcenter.html'>Storm Center</a></li>
-                <li><a href='../Lesson-7/gallery-7.html'>Gallery</a></li>
-            </ul>
-        </nav>
+        <img src='../Lesson-5/images/weathericon.png' alt='Logo' class='logo'>
+        <section class='headings'>
+            <h1>Vredenburg Forecast</h1>
+            <div class='motto'>Whatever the weather, we've got you covered</div>
+        </section>
     </header>
+    <nav>
+        <div id='cursor'><a id='menu-link' onclick='hamburgerMenu()'>☰ Menu</a></div>
+        <ul class='menu'>
+            <li><a href='../Lesson-9/index.html'>Home</a></li>
+            <li><a href='../Lesson-6/preston-6.html'>Preston</a></li>
+            <li><a href='#'>Soda Springs</a></li>
+            <li><a href='#'>Fish Haven</a></li>
+            <li id='active'><a href='../Lesson-8/stormcenter.html'>Storm Center</a></li>
+            <li><a href='../Lesson-7/gallery-7.html'>Gallery</a></li>
+        </ul>
+    </nav>
+
     <div id='banner' style='display:block;'>
         <h2><i>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</i></h2>
     </div>

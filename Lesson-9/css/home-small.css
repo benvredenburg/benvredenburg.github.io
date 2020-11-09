@@ -12,6 +12,10 @@ body {
     text-align: center;
 }
 
+main {
+    max-width: 960px;
+}
+
 h1,
 h2,
 h3,
@@ -136,6 +140,7 @@ li:hover a {
 
 iframe {
     width: 95%;
+    max-width: 960px;
     height: 500px;
     border: 1px solid black;
 }

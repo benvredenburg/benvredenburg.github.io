@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang='en-us'>
 
 <head>
@@ -7,40 +6,37 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Vredenburg Forecast | Gallery</title>
     <meta name='description' content='Vredenburg Forecast'>
-
     <link rel='stylesheet' href='../Lesson-1/css/normalize.css'>
     <link href='css/gallery-7-small.css' rel='stylesheet'>
     <link href='css/gallery-7-medium.css' rel='stylesheet'>
     <link href='css/gallery-7-large.css' rel='stylesheet'>
-    <script src='js/gallery-7.js'></script>
+    <script src='../Lesson-9/js/hamburgermenu-9.js'></script>
+    <script src='../Lesson-9/js/date-9.js'></script>
     <script src='js/lazyload.js' defer></script>
     <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap' rel='stylesheet'>
     <link rel='shortcut icon' href='../Lesson-5/images/favicon.ico'>
 </head>
+
 <body>
     <header>
-        <container class='header-cont'>
-            <section class='logo'>
-                <img src='../Lesson-5/images/weathericon.png' alt='Logo' class='main-logo-image'>
-            </section>
-            <section class='sub-cont'>
-                <h1>Vredenburg Forecast</h1>
-                <h3>Whatever the weather, we've got you covered</h3>
-            </section>
-        </container>
-        <nav class='main-nav'>
-            <ul class='nav-children'>
-                <li><a href='#' onclick='responsive()'><span></span><span></span><span></span><span
-                            class='clicker'></span></a></li>
-                <li><a href='../Lesson-1/index.html'>Home</a></li>
-                <li><a href='../Lesson-6/preston-6.html'>Preston</a></li>
-                <li><a href='#'>Soda Springs</a></li>
-                <li><a href='#'>Fish Haven</a></li>
-                <li><a href='../Lesson-8/stormcenter.html'>Storm Center</a></li>
-                <li class='active'><a href='#'>Gallery</a></li>
-            </ul>
-        </nav>
+        <img src='../Lesson-5/images/weathericon.png' alt='Logo' class='logo'>
+        <section class='headings'>
+            <h1>Vredenburg Forecast</h1>
+            <div class='motto'>Whatever the weather, we've got you covered</div>
+        </section>
     </header>
+    <nav>
+        <div id='cursor'><a id='menu-link' onclick='hamburgerMenu()'>☰ Menu</a></div>
+        <ul class='menu'>
+            <li><a href='../Lesson-9/index.html'>Home</a></li>
+            <li><a href='../Lesson-6/preston-6.html'>Preston</a></li>
+            <li><a href='#'>Soda Springs</a></li>
+            <li><a href='#'>Fish Haven</a></li>
+            <li><a href='../Lesson-8/stormcenter.html'>Storm Center</a></li>
+            <li id='active'><a href='gallery-7.html'>Gallery</a></li>
+        </ul>
+    </nav>
+
     <div id='banner' style='display:block;'>
         <h2><i>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</i></h2>
     </div>
@@ -52,13 +48,11 @@
         </section>
         <section class='gallery'>
             <picture class='pic1'>
-                <img id='img1' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/hurricane.jpg'
-                    alt='pic1'>
+                <img id='img1' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/hurricane.jpg' alt='pic1'>
                 <figcaption>Hurricane over the ocean</figcaption>
             </picture>
             <picture class='pic2'>
-                <img id='img2' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/lightning2.jpg'
-                    alt='pic2'>
+                <img id='img2' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/lightning2.jpg' alt='pic2'>
                 <figcaption>Lightning on the plains</figcaption>
             </picture>
             <picture class='pic3'>
@@ -70,8 +64,7 @@
                 <figcaption>Rain in the city</figcaption>
             </picture>
             <picture class='pic5'>
-                <img id='img5' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/rainbow.jpg'
-                    alt='pic5'>
+                <img id='img5' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/rainbow.jpg' alt='pic5'>
                 <figcaption>Rainbow over a field</figcaption>
             </picture>
             <picture class='pic6'>
@@ -87,31 +80,26 @@
                 <figcaption>Rain of the pavement</figcaption>
             </picture>
             <picture class='pic9'>
-                <img id='img9' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/sunlight.jpg'
-                    alt='pic9'>
+                <img id='img9' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/sunlight.jpg' alt='pic9'>
                 <figcaption>Sun rays</figcaption>
             </picture>
             <picture class='pic10'>
-                <img id='img10' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/tornado.jpg'
-                    alt='pic10'>
+                <img id='img10' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/tornado.jpg' alt='pic10'>
                 <figcaption>Tornado touching down</figcaption>
             </picture>
             <picture class='pic11'>
-                <img id='img11' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/wave.jpg'
-                    alt='pic11'>
+                <img id='img11' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/wave.jpg' alt='pic11'>
                 <figcaption>Wave breaking over a dock</figcaption>
             </picture>
             <picture class='pic12'>
-                <img id='img12' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/snowflake.jpg'
-                    alt='pic12'>
+                <img id='img12' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/snowflake.jpg' alt='pic12'>
                 <figcaption>Snowflake close up</figcaption>
             </picture>
         </section>
     </main>
     <footer>
         <section class='legal-footer'>
-            <p class='legal'>&copy; <span id='copyrightyear'></span> | Benjamin Vredenburg | Idaho | <a target='_blank'
-                    href='https://www.byui.edu'>BYUI</a></p>
+            <p class='legal'>&copy; <span id='copyrightyear'></span> | Benjamin Vredenburg | Idaho | <a target='_blank' href='https://www.byui.edu'>BYUI</a></p>
             <p class='updatehistory'>Last Updated: <span id='lastupdated'></span></p>
         </section>
     </footer>
