@@ -1,5 +1,5 @@
 async function getperson() {
-    const requestURL = 'https://pipl.ir/v1/getPerson';
+    const requestURL = 'person.json';
 
     const response = await fetch(requestURL)
         .then(function(response) {
