@@ -1,0 +1,23 @@
+img {
+    width: 150px;
+}
+
+body {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+#missingwrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid black;
+    text-align: center;
+    background-color: white;
+}
+
+#missingwrapper img {
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 85%;
+}

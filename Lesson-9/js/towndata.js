@@ -23,7 +23,7 @@ fetch(requestURL)
 
         town.appendChild(h3);
 
-        p2.textContent = 'Founded: ' + towns[4].yearFounded;
+        p2.textContent = 'Year Founded: ' + towns[4].yearFounded;
 
         town.appendChild(p2);
 
@@ -37,7 +37,7 @@ fetch(requestURL)
 
 
 
-        document.querySelector('.item2').appendChild(town);
+        document.querySelector('.preston').appendChild(town);
 
 
     });
@@ -65,7 +65,7 @@ fetch(requestURL)
 
         town.appendChild(h3);
 
-        p2.textContent = 'Founded: ' + towns[5].yearFounded;
+        p2.textContent = 'Year Founded: ' + towns[5].yearFounded;
 
         town.appendChild(p2);
 
@@ -79,7 +79,7 @@ fetch(requestURL)
 
 
 
-        document.querySelector('.item3').appendChild(town);
+        document.querySelector('.soda-springs').appendChild(town);
 
 
     });
@@ -107,7 +107,7 @@ fetch(requestURL)
 
         town.appendChild(h3);
 
-        p2.textContent = 'Founded: ' + towns[1].yearFounded;
+        p2.textContent = 'Year Founded: ' + towns[1].yearFounded;
 
         town.appendChild(p2);
 
@@ -121,7 +121,7 @@ fetch(requestURL)
 
 
 
-        document.querySelector('.item4').appendChild(town);
+        document.querySelector('.fish-haven').appendChild(town);
 
 
     });

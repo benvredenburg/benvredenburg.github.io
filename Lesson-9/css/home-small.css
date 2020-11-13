@@ -113,11 +113,11 @@ li:hover a {
     margin: 0 auto;
     margin-top: 15px;
     display: grid;
-    grid-template-areas: 'advisory advisory advisory' 'map map map' 'item2  item2 item2' 'item3 item3 item3' 'item4 item4 item4';
+    grid-template-areas: 'advisory advisory advisory' 'map map map' 'preston preston preston' 'soda soda soda' 'haven haven haven';
     gap: 15px;
 }
 
-.item1 {
+.crisis-map {
     grid-area: map;
     width: 95%;
 }
@@ -126,19 +126,64 @@ li:hover a {
     grid-area: advisory;
 }
 
-.item2 {
-    grid-area: item2;
+.preston {
+    grid-area: preston;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.item3 {
-    grid-area: item3;
+.preston section {
+    grid-column: 1;
+    grid-row: 1;
 }
 
-.item4 {
-    grid-area: item4;
+.preston a img {
+    grid-column: 2;
+    grid-row: 1;
+    max-width: 85%;
+    box-shadow: 1rem 1rem .5rem black;
+    align-self: center;
 }
 
-iframe {
+.soda-springs {
+    grid-area: soda;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.soda-springs section {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.soda-springs img {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 85%;
+    box-shadow: 1rem 1rem .5rem black;
+    align-self: center;
+}
+
+.fish-haven {
+    grid-area: haven;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fish-haven section {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.fish-haven img {
+    grid-column: 2;
+    grid-row: 1;
+    max-width: 85%;
+    box-shadow: 1rem 1rem .5rem black;
+    align-self: center;
+}
+
+main iframe {
     width: 95%;
     max-width: 960px;
     height: 500px;
@@ -159,10 +204,11 @@ iframe {
     border: 3px solid #F97D00;
 }
 
-.town-data img {
+
+/* .town-data img {
     max-width: 85%;
     box-shadow: 1rem 1rem .5rem black;
-}
+} */
 
 .town-data section h2 {
     color: #F97D00;
@@ -302,12 +348,12 @@ iframe {
     padding-left: 5px;
 }
 
-.map {
-    padding-left: 5%;
-    padding-right: 5%;
+.contact iframe {
     margin: 0 auto;
     margin-bottom: 15px;
     width: 90%;
+    height: 300px;
+    border: 2px solid black;
 }
 
 .legal-footer {
@@ -348,14 +394,15 @@ iframe {
     }
 }
 
-footer {
-    font-size: 1rem;
-    line-height: 1rem;
-    padding: 1rem;
-}
-
-footer a {
-    text-decoration: none;
+@media only screen and (max-width: 350px) {
+    .contact p {
+        font-size: 12px;
+        line-height: 1rem;
+        padding: 0;
+    }
+    .contact iframe {
+        height: 150px;
+    }
 }
 
 @media screen and (min-width: 515px) {
