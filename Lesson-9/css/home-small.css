@@ -46,7 +46,7 @@ header img,
 .headings {
     display: inline-block;
     vertical-align: middle;
-    margin: 10px;
+    margin: .7rem;
 }
 
 .logo {
@@ -54,7 +54,7 @@ header img,
 }
 
 .headings h1 {
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .motto {
@@ -92,6 +92,16 @@ li:hover a {
     color: #0C2F5C;
 }
 
+#banner {
+    text-align: center;
+    border: 4px double white;
+    background-color: #0c2f5c;
+    color: yellow;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
 .menu {
     list-style: none;
     padding-inline-start: 0px;
@@ -111,76 +121,133 @@ li:hover a {
 .home-content-wrap {
     width: 100%;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 1rem;
     display: grid;
-    grid-template-areas: 'advisory advisory advisory' 'map map map' 'preston preston preston' 'soda soda soda' 'haven haven haven';
-    gap: 15px;
-}
-
-.crisis-map {
-    grid-area: map;
-    width: 95%;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 .advisory {
-    grid-area: advisory;
+    grid-row: 1;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.preston {
-    grid-area: preston;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.advisory p {
+    color: white;
+}
+
+.crisis-map {
+    grid-row: 2;
+    width: 95%;
 }
 
 .preston section {
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.preston section h2 {
     grid-column: 1;
     grid-row: 1;
 }
 
-.preston a img {
-    grid-column: 2;
-    grid-row: 1;
-    max-width: 85%;
-    box-shadow: 1rem 1rem .5rem black;
-    align-self: center;
+.preston section h3 {
+    grid-column: 1;
+    grid-row: 2;
 }
 
-.soda-springs {
-    grid-area: soda;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.preston section p:nth-child(1) {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.preston section p:nth-child(2) {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.preston section p:nth-child(3) {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.preston section img {
+    grid-column: 2;
+    grid-row: 1/6;
 }
 
 .soda-springs section {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.soda-springs img {
-    grid-column: 1;
-    grid-row: 1;
-    max-width: 85%;
-    box-shadow: 1rem 1rem .5rem black;
-    align-self: center;
-}
-
-.fish-haven {
-    grid-area: haven;
+    grid-row: 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+.soda-springs section h2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.soda-springs section h3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.soda-springs section p:nth-child(1) {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.soda-springs section p:nth-child(2) {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.soda-springs section p:nth-child(3) {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.soda-springs section img {
+    grid-column: 1;
+    grid-row: 1/6;
+}
+
 .fish-haven section {
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fish-haven section h2 {
     grid-column: 1;
     grid-row: 1;
 }
 
-.fish-haven img {
+.fish-haven section h3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.fish-haven section p:nth-child(1) {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.fish-haven section p:nth-child(2) {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.fish-haven section p:nth-child(3) {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.fish-haven section img {
     grid-column: 2;
-    grid-row: 1;
-    max-width: 85%;
-    box-shadow: 1rem 1rem .5rem black;
-    align-self: center;
+    grid-row: 1/6;
 }
 
 main iframe {
@@ -204,12 +271,6 @@ main iframe {
     border: 3px solid #F97D00;
 }
 
-
-/* .town-data img {
-    max-width: 85%;
-    box-shadow: 1rem 1rem .5rem black;
-} */
-
 .town-data section h2 {
     color: #F97D00;
     padding-top: 25px;
@@ -226,7 +287,13 @@ main iframe {
     color: white;
 }
 
-.image-subtitle-wrap p {
+.town-data section img {
+    max-width: 85%;
+    box-shadow: 1rem 1rem .5rem black;
+    align-self: center;
+}
+
+.image-caption p {
     color: white;
 }
 
@@ -249,7 +316,7 @@ main iframe {
     box-shadow: 1rem 1rem .5rem black;
 }
 
-.image-subtitle-wrap {
+.image-caption {
     grid-column-start: 2;
     align-self: center;
     justify-self: center;
@@ -376,16 +443,6 @@ main iframe {
     display: none;
 }
 
-#banner {
-    text-align: center;
-    border: 4px double white;
-    background-color: #0c2f5c;
-    color: yellow;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    padding: 10px;
-}
-
 @media only screen and (max-width: 300px) {
     .prev,
     .next,
@@ -402,6 +459,18 @@ main iframe {
     }
     .contact iframe {
         height: 150px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .town-data section h2 {
+        font-size: 14px;
+    }
+    .town-data section h3 {
+        font-size: 12px;
+    }
+    .town-data section p {
+        font-size: 10px;
     }
 }
 

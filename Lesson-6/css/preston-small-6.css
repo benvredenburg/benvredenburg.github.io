@@ -197,12 +197,12 @@ article p {
     padding-left: 5px;
 }
 
-.map {
-    padding-left: 5%;
-    padding-right: 5%;
+.contact iframe {
     margin: 0 auto;
     margin-bottom: 15px;
     width: 90%;
+    height: 300px;
+    border: 2px solid black;
 }
 
 .legal-footer {

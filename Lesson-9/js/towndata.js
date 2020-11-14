@@ -14,6 +14,7 @@ fetch(requestURL)
         let p2 = document.createElement('p');
         let p3 = document.createElement('p');
         let p4 = document.createElement('p');
+        let image = document.createElement('img');
 
         h2.textContent = towns[4].name;
 
@@ -34,6 +35,10 @@ fetch(requestURL)
         p4.textContent = 'Annual Rain Fall: ' + towns[4].averageRainfall;
 
         town.appendChild(p4);
+
+        image.setAttribute('src', 'images/rsz_preston.jpg');
+
+        town.appendChild(image)
 
 
 
@@ -56,6 +61,7 @@ fetch(requestURL)
         let p2 = document.createElement('p');
         let p3 = document.createElement('p');
         let p4 = document.createElement('p');
+        let image = document.createElement('img');
 
         h2.textContent = towns[5].name;
 
@@ -77,9 +83,11 @@ fetch(requestURL)
 
         town.appendChild(p4);
 
-
-
         document.querySelector('.soda-springs').appendChild(town);
+
+        image.setAttribute('src', 'images/rsz_sodasprings.jpg');
+
+        town.appendChild(image)
 
 
     });
@@ -98,6 +106,7 @@ fetch(requestURL)
         let p2 = document.createElement('p');
         let p3 = document.createElement('p');
         let p4 = document.createElement('p');
+        let image = document.createElement('img');
 
         h2.textContent = towns[1].name;
 
@@ -119,9 +128,11 @@ fetch(requestURL)
 
         town.appendChild(p4);
 
-
-
         document.querySelector('.fish-haven').appendChild(town);
+
+        image.setAttribute('src', 'images/rsz_fishhaven.jpg');
+
+        town.appendChild(image)
 
 
     });

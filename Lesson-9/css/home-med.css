@@ -27,9 +27,7 @@
     .contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 0 auto;
         margin-bottom: 15px;
-        margin-top: 25px;
         border-top: 5px solid #0C2F5C;
         padding-top: 15px;
     }
@@ -37,22 +35,25 @@
         background-color: transparent;
     }
     .adress {
-        grid-column: 2/3;
-        grid-row: 2/3;
+        grid-column: 2;
+        grid-row: 2;
+        font-size: .8rem;
     }
     .email {
-        grid-column: 2/3;
-        grid-row: 3/4;
+        grid-column: 2;
+        grid-row: 3;
+        font-size: .8rem;
     }
     .phone {
-        grid-column: 2/3;
-        grid-row: 4/5;
+        grid-column: 2;
+        grid-row: 4;
+        font-size: .8rem;
     }
-    .map {
-        grid-column: 1/2;
+    .contact iframe {
+        grid-column: 1;
         grid-row: 1/6;
         margin: 0 auto;
-        width: 50%;
+        width: 40%;
         min-width: 300px;
         max-width: 960px;
         border: 1px solid black;
@@ -60,8 +61,9 @@
     .social {
         display: grid;
         grid-template-columns: 36px 36px 36px 1fr;
-        grid-column: 2/3;
-        grid-row: 5/6;
+        grid-column: 2;
+        grid-row: 5;
+        align-self: center;
     }
     .social img {
         max-width: 36px;
@@ -107,5 +109,14 @@
     }
     .menu li:hover a {
         color: white;
+    }
+    .adress {
+        font-size: 1rem;
+    }
+    .email {
+        font-size: 1rem;
+    }
+    .phone {
+        font-size: 1rem;
     }
 }
