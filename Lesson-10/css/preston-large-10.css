@@ -1,0 +1,23 @@
+    /* large */
+    
+    @media screen and (min-width: 765px) {
+        .five-day-forecast {
+            margin-top: 10px;
+        }
+    }
+    
+    @media screen and (min-width: 886px) {
+        header {
+            font-size: 2rem;
+        }
+        .weather-summary-container {
+            top: 2rem;
+            left: 3rem;
+            z-index: 99;
+            padding: 1rem;
+            line-height: 1.5rem;
+        }
+        .art-img {
+            width: 25rem;
+        }
+    }

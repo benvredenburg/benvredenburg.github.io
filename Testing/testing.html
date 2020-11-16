@@ -1,0 +1,142 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>WTGI Weather | Preston, Idaho</title>
+    <meta name="description" content="WTGI Weather page featuring the Idaho town of Preston">
+
+    <link rel="stylesheet" href="../Lesson-1/css/normalize.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/small-10.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="css/medium-10.css">
+    <link rel="stylesheet" media="screen and (min-width: 801px)" href="css/large-10.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/weather-2371967_960_720.png" alt="WTGI Logo">
+        <section class="headings">
+            <h1>WTGI Weather</h1>
+            <div class="motto">Way to Go, Idaho - Keeping Communities Connected since 2019</div>
+        </section>
+        <div class="current-conditions">
+            <img class="conditions-img" id="conditions-icon" src="http://openweathermap.org/img/w/02d.png" alt="few clouds">
+            <div class="current"><b>Currently: <span id="windTemp">46.36</span>°</b></div>
+        </div>
+    </header>
+
+    <nav>
+        <a id="menu-link" onclick="hamburgerMenu()">☰ Menu</a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li id="current-page"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Preston, Idaho</h1>
+        <article id="townEventsPreston">
+            <h2>Preston Events</h2> March 29: Work Creek Revival,July 8-12: Napoleon Dynamite Festival,November 2-4: Freedom Days</article>
+        <br>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/hero-small.jpg" media="(max-width: 869px)">
+                <img class="hero-img" src="images/hero-large.jpg" alt="Charming Idaho Countryside">
+            </picture>
+            <div class="weather-summary">
+                <h2>Weather Summary</h2>
+                <p><strong>Currently:</strong> <span id="current-weather">Clouds</span></p>
+                <p><strong>High:</strong> <span id="temp-high">48.99</span>°</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill">45.15</span>°</p>
+                <p><strong>Humidity:</strong> <span id="humid">87</span></p>
+                <p><strong>Wind Speed:</strong> <span id="windSpeed">3.36</span> MPH</p>
+            </div>
+        </div>
+        <br>
+        <div class="fiveDayForecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th id="day-1">Tuesday</th>
+                        <th id="day-2">Wednesday</th>
+                        <th id="day-3">Thursday</th>
+                        <th id="day-4">Friday</th>
+                        <th id="day-5">Saturday</th>
+                    </tr>
+                    <tr>
+                        <td><img id="img-1" src="https://openweathermap.org/img/w/03d.png" alt="scattered clouds"></td>
+                        <td><img id="img-2" src="https://openweathermap.org/img/w/04d.png" alt="scattered clouds"></td>
+                        <td><img id="img-3" src="https://openweathermap.org/img/w/04d.png" alt="scattered clouds"></td>
+                        <td><img id="img-4" src="https://openweathermap.org/img/w/01d.png" alt="scattered clouds"></td>
+                        <td><img id="img-5" src="https://openweathermap.org/img/w/01d.png" alt="scattered clouds"></td>
+                    </tr>
+                    <tr>
+                        <td id="high-1">41.32°</td>
+                        <td id="high-2">40.66°</td>
+                        <td id="high-3">37.31°</td>
+                        <td id="high-4">34.97°</td>
+                        <td id="high-5">29.95°</td>
+                    </tr>
+                    <tr>
+                        <td id="condition-1">Clouds</td>
+                        <td id="condition-2">Clouds</td>
+                        <td id="condition-3">Clouds</td>
+                        <td id="condition-4">Clear</td>
+                        <td id="condition-5">Clear</td>
+                    </tr>
+                    <tr>
+                        <td id="low-1">41.32°</td>
+                        <td id="low-2">40.66°</td>
+                        <td id="low-3">37.31°</td>
+                        <td id="low-4">34.97°</td>
+                        <td id="low-5">29.95°</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <article>
+            <img src="images/nature-3159121_960_720.jpg" alt="Flower breaking through snow" class="articleimg">
+            <h2>More Snow Now Possible: Weather service revises winter forecast for Idaho</h2>
+            <h3>by Madeleine Coles</h3>
+            <p>Despite the cold temperatures and recent snowfall in East Idaho, the National Weather Service still says the Gem State is expected to have a warmer than normal winter.</p>
+            <p>The weather service’s winter outlook was released last month and predicted some states, including Idaho, would have warmer and drier winters.</p>
+            <p>The weather service has since revised that forecast and now says it’s no longer so sure about this winter being drier than normal in Idaho. There’s a chance the state could receive more ...</p>
+            <p><button onclick="window.location.href = 'https://www.idahostatejournal.com/news/local/more-snow-now-possible-weather-service-revises-winter-forecast-for/article_9fdd96b6-238e-55fe-9bd7-2a572fc93a60.html';">Continue
+                    Reading Article...</button></p>
+        </article>
+        <br><br>
+        <div class="contact">
+            <p><strong>WTGI Weather</strong>
+                <br>321 Sesame Street
+                <br>Fish Haven, ID 83287</p>
+            <p> ☎ 999.999.9999
+                <br> ✉ contact@wtgiweather.news
+            </p>
+            <div class="map"><img src="images/fishhavenmap.png" alt="Google Maps image of Fish Haven, Idaho"></div>
+        </div>
+    </main>
+
+    <footer>
+        ©2019 WTGI Weather | <a href="attrib.html">Attributions</a> | <a href="https://kaqurei.github.io/">Destyni
+            Shirley</a>
+        <div id="output">Monday, 16 November 2020</div>
+        <script src="scripts/weatherapi.js"></script>
+        <script src="scripts/townevents.js"></script>
+        <script src="scripts/forecastapi.js"></script>
+        <script src="scripts/hamburgermenu.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </footer>
+
+
+</body>
+
+</html>

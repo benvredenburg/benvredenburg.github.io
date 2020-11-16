@@ -1,16 +1,31 @@
-img {
-    width: 150px;
+* {
+    font-family: "verdana";
 }
 
 body {
     background-color: whitesmoke;
+}
+
+main {
+    background-color: rgb(208, 218, 224);
     text-align: center;
+    border-top: 15px solid rgb(255, 1, 1);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 25px;
+}
+
+main h1 {
+    font-size: 40px;
 }
 
 #missingwrapper {
     max-width: 500px;
     margin: 0 auto;
-    border: 2px solid black;
     text-align: center;
     background-color: white;
 }
@@ -19,5 +34,39 @@ body {
     align-self: center;
     margin-top: 15px;
     margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 85%;
+}
+
+#information {
+    margin-top: 15px;
+}
+
+#information section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#information section h2 {
+    grid-column: 1/-1;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+#information section p:nth-child(odd) {
+    text-align: left;
+    margin-top: 1px;
+}
+
+#information section p:nth-child(even) {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#information section p {
+    margin-top: 0;
+    margin-bottom: 25px;
 }

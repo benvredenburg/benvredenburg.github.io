@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='description' content='Vredenburg Forecast'>
+    <link rel='stylesheet' href='../Lesson-1/css/normalize.css'>
+    <link href='css/preston-small-10.css' rel='stylesheet'>
+    <link href='css/preston-med-10.css' rel='stylesheet'>
+    <link href='css/preston-large-10.css' rel='stylesheet'>
+    <script src='js/hamburgermenu.js'></script>
+    <script src='js/date.js'></script>
+    <script src='js/windchill.js'></script>
+    <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap' rel='stylesheet'>
+    <link rel='shortcut icon' href='../Lesson-5/images/favicon.ico'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Preston, ID</title>
+</head>
+
+<body>
+    <header>
+        <img src='../Lesson-5/images/weathericon.png' alt='Logo' class='logo'>
+        <section class='headings'>
+            <h1>Vredenburg Forecast</h1>
+            <div class='motto'>Whatever the weather, we've got you covered</div>
+        </section>
+    </header>
+    <nav>
+        <div id='cursor'><a id='menu-link' onclick='hamburgerMenu()'>☰ Menu</a></div>
+        <ul class='menu'>
+            <li><a href='../Lesson-9/index.html'>Home</a></li>
+            <li id='active'><a href='preston-6.html'>Preston</a></li>
+            <li><a href='#'>Soda Springs</a></li>
+            <li><a href='#'>Fish Haven</a></li>
+            <li><a href='../Lesson-8/stormcenter.html'>Storm Center</a></li>
+            <li><a href='../Lesson-7/gallery-7.html'>Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div id='banner' style='display:block;'>
+        <h2><i>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</i></h2>
+    </div>
+    <main>
+        <h1>
+            PRESTON, IDAHO
+        </h1>
+        <section class='hero-container'>
+            <picture class='hero-image'>
+                <source media='(max-width: 500px)' srcset='images/hero-img500.jpg'>
+                <source media='(max-width: 800px)' srcset='images/hero-img800.jpg'>
+                <img src='images/hero-img1100.jpg' alt='hero-img'>
+            </picture>
+            <section class='weather-summary-container'>
+                <h2>
+                    Weather Summary
+                </h2>
+                <p>Currently: Sunny</p>
+                <p>Temperature: <span id='temp'>40</span>° F</p>
+                <p id='windchill'></p>
+                <p>Humidity: 15%</p>
+                <p>Windspeed: <span id='wind'>4</span> MPH</p>
+            </section>
+        </section>
+        <section class='five-day-forecast'>
+            <h3>
+                Five Day Forecast
+            </h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                    <tr>
+                        <td>High: 55°</td>
+                        <td>High: 42°</td>
+                        <td>High: 61°</td>
+                        <td>High: 70°</td>
+                        <td>High: 33°</td>
+                    </tr>
+                    <tr>
+                        <td>Partly Cloudy</td>
+                        <td>Rain</td>
+                        <td>Partly Cloudy</td>
+                        <td>Sun</td>
+                        <td>Snow</td>
+                    </tr>
+                    <tr>
+                        <td>Low: 33°</td>
+                        <td>Low: 28°</td>
+                        <td>Low: 49°</td>
+                        <td>Low: 58°</td>
+                        <td>Low: 12°</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article>
+            <img class='art-img' src='../Lesson-5/images/fall.jpg' alt='art-img'>
+            <h2>Days of Summer make way for Fall</h2>
+            <h4>by Benjamin Vredenburg</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar nisi id efficitur rutrum. Nunc sodales congue magna, venenatis sodales turpis suscipit nec. Nullam facilisis vulputate magna sit amet congue. Nullam in enim elit. In vitae congue
+                mauris, venenatis pretium ipsum. Quisque et gravida turpis. Pellentesque quis tortor et lectus tempus blandit ut id justo. Sed viverra diam a eros gravida gravida in eget elit. Phasellus mollis et velit a condimentum. Nulla eleifend imperdiet
+                convallis. Nullam vel lacus elit. Fusce posuere quam a orci consectetur pellentesque. Donec a nisl eget mi pretium accumsan ut ac erat. Donec aliquet malesuada ex a bibendum. Cras nec sem ac tortor accumsan auctor sed sit amet ex. Nulla
+                mattis pharetra sapien ac dapibus. Proin tristique diam ipsum, ac vehicula felis cursus eu. Maecenas quis ultrices odio, in condimentum mi. Donec sit amet libero nec orci tincidunt suscipit. Sed tortor ex, tristique congue cursus vitae,
+                molestie non libero. Duis vestibulum nisl nec purus hendrerit vulputate. Donec dui mauris, vehicula sollicitudin turpis id, porta sagittis metus. Quisque porta, mauris vehicula malesuada molestie, mi justo tempor ex, non maximus velit
+                eros vitae purus. Suspendisse rhoncus congue sapien eget imperdiet. Integer feugiat, orci non pulvinar scelerisque, quam elit luctus dui, condimentum commodo quam nunc eget leo. Duis fermentum sed nibh sed feugiat. Nullam tempus sem nec
+                tellus ultricies, non maximus est posuere. Nunc molestie augue nisi, ac congue ipsum commodo vel. Pellentesque imperdiet accumsan nibh vitae bibendum. Nunc aliquet mattis lobortis. In hac habitasse platea dictumst. Curabitur tortor.
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <section class='contact'>
+            <h3>
+                Contact Information
+            </h3>
+            <p class='adress'> 📍 555 Main Avenue, Preston, ID 83440</p>
+            <p class='email'>✉ contact@vredenburgforecast.news</p>
+            <p class='phone'>☎ (555)555-5555</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23682.87354293667!2d-111.89783454312985!3d42.0997774615348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1605293477512!5m2!1sen!2sus"
+                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <section class='social'>
+                <a target="_blank" href='https://instagram.com'> <img src='../Lesson-5/images/instagram.png'></a>
+                <a target="_blank" href='https://facebook.com'> <img src='../Lesson-5/images/facebook.png'></a>
+                <a target="_blank" href='https://twitter.com'> <img src='../Lesson-5/images/twitter.png'></a>
+            </section>
+        </section>
+
+
+        <section class='legal-footer'>
+            <p class='legal'>&copy; <span id='copyrightyear'></span> | Benjamin Vredenburg | Idaho | <a target='_blank' href='https://www.byui.edu'>BYUI</a></p>
+            <p class='updatehistory'>Last Updated: <span id='lastupdated'></span></p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
