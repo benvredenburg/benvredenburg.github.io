@@ -21,9 +21,24 @@ weatherRequest.onload = function() {
     document.getElementById('humid').innerHTML = humidity;
     document.getElementById('windspeed').innerHTML = windspeed;
     document.getElementById('feelslike').innerHTML = feelslike;
+    document.getElementById('windChill').innerHTML = getWindChill();
 
     document.getElementById('conditions-icon').setAttribute('src', imageConditions + weatherData.weather[0].icon + '.png');
     document.getElementById('conditions-icon').setAttribute('alt', weatherData.weather[0].description);
+}
+
+function getWindChill() {
+    let tempF = parseInt(document.getElementById('temp').innerHTML);
+    let speed = parseInt(document.getElementById('windspeed').innerHTML);
+    result = windChill(tempF, speed);
+    return result;
+}
+
+function windChill(tempF, speed) {
+    let windChillFactor = 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speed, 0.16) + 0.4275 * tempF * Math.pow(speed, 0.16);
+    let soCold = windChillFactor.toFixed(2);
+
+    return soCold;
 }
 
 let forecastRequest = new XMLHttpRequest();
