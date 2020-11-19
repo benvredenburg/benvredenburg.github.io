@@ -109,16 +109,28 @@
     border: 1px solid black;
 }
 
-.social {
+.contact .social {
     display: grid;
-    grid-template-columns: 36px 36px 36px 1fr;
+    grid-template-columns: 1fr 36px 36px 36px 1fr;
     grid-column: 2;
     grid-row: 5;
     align-self: center;
 }
 
-.social img {
+.contact .social img {
     max-width: 36px;
+}
+
+.insta {
+    grid-column: 2;
+}
+
+.face {
+    grid-column: 3;
+}
+
+.twt {
+    grid-column: 4;
 }
 
 @media screen and (min-width: 772px) {

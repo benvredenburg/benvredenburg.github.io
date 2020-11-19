@@ -116,7 +116,7 @@ fetch(requestURL)
 
                 document.querySelector('.fish-haven').appendChild(town);
 
-                image.setAttribute('src', 'images/rsz_sodasprings.jpg');
+                image.setAttribute('src', 'images/rsz_fishhaven.jpg');
 
                 town.appendChild(image);
 
