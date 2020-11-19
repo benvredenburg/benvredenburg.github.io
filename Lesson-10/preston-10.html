@@ -10,7 +10,7 @@
     <link href='css/preston-large-10.css' rel='stylesheet'>
     <script src='js/hamburgermenu.js'></script>
     <script src='js/date.js'></script>
-    <script src='js/windchill.js'></script>
+    <script src='js/weatherapi.js'></script>
     <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap' rel='stylesheet'>
     <link rel='shortcut icon' href='../Lesson-5/images/favicon.ico'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -51,14 +51,28 @@
                 <img src='images/hero-img1100.jpg' alt='hero-img'>
             </picture>
             <section class='weather-summary-container'>
-                <h2>
-                    Weather Summary
-                </h2>
-                <p>Currently: Sunny</p>
-                <p>Temperature: <span id='temp'>40</span>° F</p>
-                <p id='windchill'></p>
-                <p>Humidity: 15%</p>
-                <p>Windspeed: <span id='wind'>4</span> MPH</p>
+                <h2>Weather Summary</h2>
+                <p>
+                    <strong>Currently:</strong>
+                    <span id='current-weather'></span>
+                </p>
+                <p>
+                    <strong>Temperature:</strong>
+                    <span id='temp'></span>°
+                </p>
+                <p>
+                    <strong>Feels Like:</strong>
+                    <span id='feelslike'></span>°
+                </p>
+                <p>
+                    <strong>Humidity:</strong>
+                    <span id='humid'></span>
+                </p>
+                <p>
+                    <strong>Wind Speed:</strong>
+                    <span id='windspeed'></span> MPH
+                </p>
+
             </section>
         </section>
         <section class='five-day-forecast'>
@@ -68,32 +82,39 @@
             <table>
                 <tbody>
                     <tr>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
+                        <th id='day-1'></th>
+                        <th id='day-2'></th>
+                        <th id='day-3'></th>
+                        <th id='day-4'></th>
+                        <th id='day-5'></th>
                     </tr>
                     <tr>
-                        <td>High: 55°</td>
-                        <td>High: 42°</td>
-                        <td>High: 61°</td>
-                        <td>High: 70°</td>
-                        <td>High: 33°</td>
+                        <td><img id="img-1"></td>
+                        <td><img id="img-2"></td>
+                        <td><img id="img-3"></td>
+                        <td><img id="img-4"></td>
+                        <td><img id="img-5"></td>
                     </tr>
                     <tr>
-                        <td>Partly Cloudy</td>
-                        <td>Rain</td>
-                        <td>Partly Cloudy</td>
-                        <td>Sun</td>
-                        <td>Snow</td>
+                        <td id="high-1"></td>
+                        <td id="high-2"></td>
+                        <td id="high-3"></td>
+                        <td id="high-4"></td>
+                        <td id="high-5"></td>
                     </tr>
                     <tr>
-                        <td>Low: 33°</td>
-                        <td>Low: 28°</td>
-                        <td>Low: 49°</td>
-                        <td>Low: 58°</td>
-                        <td>Low: 12°</td>
+                        <td id="condition-1"></td>
+                        <td id="condition-2"></td>
+                        <td id="condition-3"></td>
+                        <td id="condition-4"></td>
+                        <td id="condition-5"></td>
+                    </tr>
+                    <tr>
+                        <td id="low-1"></td>
+                        <td id="low-2"></td>
+                        <td id="low-3"></td>
+                        <td id="low-4"></td>
+                        <td id="low-5"></td>
                     </tr>
                 </tbody>
             </table>
