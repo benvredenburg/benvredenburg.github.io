@@ -1,51 +1,5 @@
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-fetch(requestURL)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(jsonObject) {
-        console.table(jsonObject);
-        const towns = jsonObject['towns'];
-
-        let town = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let h3 = document.createElement('h3');
-        let p2 = document.createElement('p');
-        let p3 = document.createElement('p');
-        let p4 = document.createElement('p');
-        let image = document.createElement('img');
-
-        h2.textContent = towns[4].name;
-
-        town.appendChild(h2);
-
-        h3.textContent = '"' + towns[4].motto + '"';
-
-        town.appendChild(h3);
-
-        p2.textContent = 'Year Founded: ' + towns[4].yearFounded;
-
-        town.appendChild(p2);
-
-        p3.textContent = 'Population: ' + towns[4].currentPopulation;
-
-        town.appendChild(p3);
-
-        p4.textContent = 'Annual Rain Fall: ' + towns[4].averageRainfall;
-
-        town.appendChild(p4);
-
-        image.setAttribute('src', 'images/rsz_preston.jpg');
-
-        town.appendChild(image)
-
-
-
-        document.querySelector('.preston').appendChild(town);
-
-
-    });
 
 fetch(requestURL)
     .then(function(response) {
@@ -55,84 +9,118 @@ fetch(requestURL)
         console.table(jsonObject);
         const towns = jsonObject['towns'];
 
-        let town = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let h3 = document.createElement('h3');
-        let p2 = document.createElement('p');
-        let p3 = document.createElement('p');
-        let p4 = document.createElement('p');
-        let image = document.createElement('img');
+        for (let i = 0; i < towns.length; i++) {
 
-        h2.textContent = towns[5].name;
+            if (towns[i].name == "Preston") {
+                let town = document.createElement('section');
+                let h2 = document.createElement('h2');
+                let h3 = document.createElement('h3');
+                let p2 = document.createElement('p');
+                let p3 = document.createElement('p');
+                let p4 = document.createElement('p');
+                let image = document.createElement('img');
 
-        town.appendChild(h2);
+                h2.textContent = towns[i].name;
 
-        h3.textContent = '"' + towns[5].motto + '"';
+                town.appendChild(h2);
 
-        town.appendChild(h3);
+                h3.textContent = '"' + towns[i].motto + '"';
 
-        p2.textContent = 'Year Founded: ' + towns[5].yearFounded;
+                town.appendChild(h3);
 
-        town.appendChild(p2);
+                p2.textContent = 'Year Founded: ' + towns[i].yearFounded;
 
-        p3.textContent = 'Population: ' + towns[5].currentPopulation;
+                town.appendChild(p2);
 
-        town.appendChild(p3);
+                p3.textContent = 'Population: ' + towns[i].currentPopulation;
 
-        p4.textContent = 'Annual Rain Fall: ' + towns[5].averageRainfall;
+                town.appendChild(p3);
 
-        town.appendChild(p4);
+                p4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
 
-        document.querySelector('.soda-springs').appendChild(town);
+                town.appendChild(p4);
 
-        image.setAttribute('src', 'images/rsz_sodasprings.jpg');
+                document.querySelector('.preston').appendChild(town);
 
-        town.appendChild(image)
+                image.setAttribute('src', 'images/rsz_preston.jpg');
 
-
-    });
-
-fetch(requestURL)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(jsonObject) {
-        console.table(jsonObject);
-        const towns = jsonObject['towns'];
-
-        let town = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let h3 = document.createElement('h3');
-        let p2 = document.createElement('p');
-        let p3 = document.createElement('p');
-        let p4 = document.createElement('p');
-        let image = document.createElement('img');
-
-        h2.textContent = towns[1].name;
-
-        town.appendChild(h2);
-
-        h3.textContent = '"' + towns[1].motto + '"';
-
-        town.appendChild(h3);
-
-        p2.textContent = 'Year Founded: ' + towns[1].yearFounded;
-
-        town.appendChild(p2);
-
-        p3.textContent = 'Population: ' + towns[1].currentPopulation;
-
-        town.appendChild(p3);
-
-        p4.textContent = 'Annual Rain Fall: ' + towns[1].averageRainfall;
-
-        town.appendChild(p4);
-
-        document.querySelector('.fish-haven').appendChild(town);
-
-        image.setAttribute('src', 'images/rsz_fishhaven.jpg');
-
-        town.appendChild(image)
+                town.appendChild(image);
 
 
+            }
+            if (towns[i].name == "Soda Springs") {
+                let town = document.createElement('section');
+                let h2 = document.createElement('h2');
+                let h3 = document.createElement('h3');
+                let p2 = document.createElement('p');
+                let p3 = document.createElement('p');
+                let p4 = document.createElement('p');
+                let image = document.createElement('img');
+
+                h2.textContent = towns[i].name;
+
+                town.appendChild(h2);
+
+                h3.textContent = '"' + towns[i].motto + '"';
+
+                town.appendChild(h3);
+
+                p2.textContent = 'Year Founded: ' + towns[i].yearFounded;
+
+                town.appendChild(p2);
+
+                p3.textContent = 'Population: ' + towns[i].currentPopulation;
+
+                town.appendChild(p3);
+
+                p4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+
+                town.appendChild(p4);
+
+                document.querySelector('.soda-springs').appendChild(town);
+
+                image.setAttribute('src', 'images/rsz_sodasprings.jpg');
+
+                town.appendChild(image);
+
+
+            }
+            if (towns[i].name == "Fish Haven") {
+                let town = document.createElement('section');
+                let h2 = document.createElement('h2');
+                let h3 = document.createElement('h3');
+                let p2 = document.createElement('p');
+                let p3 = document.createElement('p');
+                let p4 = document.createElement('p');
+                let image = document.createElement('img');
+
+                h2.textContent = towns[i].name;
+
+                town.appendChild(h2);
+
+                h3.textContent = '"' + towns[i].motto + '"';
+
+                town.appendChild(h3);
+
+                p2.textContent = 'Year Founded: ' + towns[i].yearFounded;
+
+                town.appendChild(p2);
+
+                p3.textContent = 'Population: ' + towns[i].currentPopulation;
+
+                town.appendChild(p3);
+
+                p4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+
+                town.appendChild(p4);
+
+                document.querySelector('.fish-haven').appendChild(town);
+
+                image.setAttribute('src', 'images/rsz_sodasprings.jpg');
+
+                town.appendChild(image);
+
+
+            }
+        }
     });
