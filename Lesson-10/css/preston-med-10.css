@@ -57,6 +57,12 @@
         color: #F97D00;
         padding-top: 15px;
     }
+    #credit {
+        margin-bottom: 20px;
+    }
+    #credit a:visited {
+        color: white;
+    }
     article {
         width: 70%;
         text-align: left !important;
@@ -75,62 +81,52 @@
         border-top: 5px solid #0C2F5C;
         padding-top: 15px;
     }
-}
-
-.contact h3 {
-    background-color: transparent;
-}
-
-.adress {
-    grid-column: 2;
-    grid-row: 2;
-    font-size: .8rem;
-}
-
-.email {
-    grid-column: 2;
-    grid-row: 3;
-    font-size: .8rem;
-}
-
-.phone {
-    grid-column: 2;
-    grid-row: 4;
-    font-size: .8rem;
-}
-
-.contact iframe {
-    grid-column: 1;
-    grid-row: 1/6;
-    margin: 0 auto;
-    width: 40%;
-    min-width: 300px;
-    max-width: 960px;
-    border: 1px solid black;
-}
-
-.contact .social {
-    display: grid;
-    grid-template-columns: 1fr 36px 36px 36px 1fr;
-    grid-column: 2;
-    grid-row: 5;
-    align-self: center;
-}
-
-.contact .social img {
-    max-width: 36px;
-}
-
-.insta {
-    grid-column: 2;
-}
-
-.face {
-    grid-column: 3;
-}
-
-.twt {
-    grid-column: 4;
+    .contact h3 {
+        background-color: transparent;
+    }
+    .adress {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: .8rem;
+    }
+    .email {
+        grid-column: 2;
+        grid-row: 3;
+        font-size: .8rem;
+    }
+    .phone {
+        grid-column: 2;
+        grid-row: 4;
+        font-size: .8rem;
+    }
+    .contact iframe {
+        grid-column: 1;
+        grid-row: 1/6;
+        margin: 0 auto;
+        width: 40%;
+        min-width: 300px;
+        max-width: 960px;
+        border: 1px solid black;
+    }
+    .contact .social {
+        display: grid;
+        grid-template-columns: 1fr 36px 36px 36px 1fr;
+        grid-column: 2;
+        grid-row: 5;
+        align-self: center;
+    }
+    .contact .social img {
+        max-width: 36px;
+    }
+    .insta {
+        grid-column: 2;
+    }
+    .face {
+        grid-column: 3;
+    }
+    .twt {
+        grid-column: 4;
+    }
 }
 
 @media screen and (min-width: 772px) {
