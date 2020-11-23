@@ -1,0 +1,18 @@
+@media screen and (min-width: 886px) {
+    /* large */
+    header {
+        font-size: 2rem;
+    }
+    .section-banner h2 {
+        text-align: center;
+    }
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery picture {
+        padding: 2rem 1rem 1rem 2rem;
+    }
+    picture:hover {
+        box-shadow: 0 0 50px #333;
+    }
+}

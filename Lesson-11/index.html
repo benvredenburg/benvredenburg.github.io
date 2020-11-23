@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='description' content='Vredenburg Forecast'>
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link href='css/home-small.css' rel='stylesheet'>
+    <link href='css/home-med.css' rel='stylesheet'>
+    <link href='css/home-large.css' rel='stylesheet'>
+    <script src='js/hamburgermenu.js'></script>
+    <script src='js/date.js'></script>
+    <script src='js/slides.js' defer></script>
+    <script src='js/towndata.js'></script>
+    <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap' rel='stylesheet'>
+    <link rel='shortcut icon' href='../Lesson-5/images/favicon.ico'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Vredenburg Report | Home</title>
+</head>
+
+<body>
+
+    <header>
+        <img src='images/weathericon.png' alt='Logo' class='logo'>
+        <section class="headings">
+            <h1>Vredenburg Forecast</h1>
+            <div class="motto">Whatever the weather, we've got you covered</div>
+        </section>
+    </header>
+
+    <nav>
+        <div id='cursor'><a id='menu-link' onclick='hamburgerMenu()'>☰ Menu</a></div>
+        <ul class='menu'>
+            <li id='active'><a href='index.html'>Home</a></li>
+            <li><a href='preston.html'>Preston</a></li>
+            <li><a href='#'>Soda Springs</a></li>
+            <li><a href='#'>Fish Haven</a></li>
+            <li><a href='stormcenter.html'>Storm Center</a></li>
+            <li><a href='gallery.html'>Gallery</a></li>
+        </ul>
+    </nav>
+    <!-- <div id='banner' style='display:block;'>
+        <h2><i>'Enter in a Special Event here'</i></h2>
+    </div> -->
+    <main>
+        <div class="home-content-wrap">
+            <div class="crisis-map">
+                <iframe src="https://www.google.org/crisismap/weather_and_events?hl=en&llbox=43.166%2C41.94%2C-110.862%2C-114.625&t=ROADMAP&layers=30%2C1%2C31%2C32%2C1340721332252%3A49%2C20%2C12%2Clayer9%2C2%2Clayer1%2C3%3A100"></iframe>
+            </div>
+            <div class="advisory">
+                <h2>Live Map</h2>
+                <h3>Provided by Google</h3>
+                <p>Please be advised of local weather conditions.</p>
+                <p>Use the Layers tab to filter map for clouds, percipitation, and storm information.</p>
+            </div>
+            <div class="preston town-data">
+            </div>
+            <div class="soda-springs town-data">
+            </div>
+            <div class="fish-haven town-data">
+            </div>
+        </div>
+        <h1>Gallery Spotlight</h1>
+
+        <div class="spotlight">
+            <span class="prev" onclick="plusSlides(-1)">&#9664;</span> <span class="next" onclick="plusSlides(1)">&#9654;</span>
+
+            <div class="image-caption">
+                <div class="mySlides fade">
+                    <img src="images/tornado.jpg" alt="Tornado">
+                    <br>
+                    <p>Tornado touching down</p>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/mist.jpg" alt="mist">
+                    <br>
+                    <p>Mist over a forest</p>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/lightning2.jpg" alt="lightning">
+                    <br>
+                    <p>Lightning on the plains</p>
+                </div>
+            </div>
+            <br>
+            <button onclick="window.location.href='gallery.html'">Gallery</button>
+        </div>
+        <br>
+        <div class="button-box">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <section class='contact'>
+            <h3>
+                Contact Information
+            </h3>
+            <p class='adress'>📍 555 Main Avenue, Preston, ID 83440</p>
+            <p class='email'>✉ contact@vredenburgforecast.news</p>
+            <p class='phone'>☎ (555)555-5555</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23682.87354293667!2d-111.89783454312985!3d42.0997774615348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1605293477512!5m2!1sen!2sus"
+                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <section class='social'>
+                <a target="_blank" href='https://instagram.com'> <img src='images/instagram.png'></a>
+                <a target="_blank" href='https://facebook.com'> <img src='images/facebook.png'></a>
+                <a target="_blank" href='https://twitter.com'> <img src='images/twitter.png'></a>
+            </section>
+        </section>
+
+
+        <section class='legal-footer'>
+            <p class='legal'>&copy; <span id='copyrightyear'></span> | Benjamin Vredenburg | Idaho | <a target='_blank' href='https://www.byui.edu'>BYUI</a></p>
+            <p class='updatehistory'>Last Updated: <span id='lastupdated'></span></p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

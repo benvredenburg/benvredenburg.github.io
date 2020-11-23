@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Vredenburg Forecast | Gallery</title>
+    <meta name='description' content='Vredenburg Forecast'>
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link href='css/gallery-small.css' rel='stylesheet'>
+    <link href='css/gallery-medium.css' rel='stylesheet'>
+    <link href='css/gallery-large.css' rel='stylesheet'>
+    <script src='js/hamburgermenu.js'></script>
+    <script src='js/date.js'></script>
+    <script src='js/lazyload.js' defer></script>
+    <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap' rel='stylesheet'>
+    <link rel='shortcut icon' href='images/favicon.ico'>
+</head>
+
+<body>
+    <header>
+        <img src='images/weathericon.png' alt='Logo' class='logo'>
+        <section class='headings'>
+            <h1>Vredenburg Forecast</h1>
+            <div class='motto'>Whatever the weather, we've got you covered</div>
+        </section>
+    </header>
+    <nav>
+        <div id='cursor'><a id='menu-link' onclick='hamburgerMenu()'>☰ Menu</a></div>
+        <ul class='menu'>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='preston.html'>Preston</a></li>
+            <li><a href='#'>Soda Springs</a></li>
+            <li><a href='#'>Fish Haven</a></li>
+            <li><a href='stormcenter.html'>Storm Center</a></li>
+            <li id='active'><a href='gallery.html'>Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div id='banner' style='display:block;'>
+        <h2><i>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavillion.</i></h2>
+    </div>
+    <main>
+        <section class='section-banner'>
+            <h2>
+                Gallery
+            </h2>
+        </section>
+        <section class='gallery'>
+            <picture class='pic1'>
+                <img id='img1' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/hurricane.jpg' alt='pic1'>
+                <figcaption>Hurricane over the ocean</figcaption>
+            </picture>
+            <picture class='pic2'>
+                <img id='img2' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/lightning2.jpg' alt='pic2'>
+                <figcaption>Lightning on the plains</figcaption>
+            </picture>
+            <picture class='pic3'>
+                <img id='img3' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/mist.jpg' alt='pic3'>
+                <figcaption>Mist over a forest</figcaption>
+            </picture>
+            <picture class='pic4'>
+                <img id='img4' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/rain.jpg' alt='pic4'>
+                <figcaption>Rain in the city</figcaption>
+            </picture>
+            <picture class='pic5'>
+                <img id='img5' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/rainbow.jpg' alt='pic5'>
+                <figcaption>Rainbow over a field</figcaption>
+            </picture>
+            <picture class='pic6'>
+                <img id='img6' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/snow.jpg' alt='pic6'>
+                <figcaption>Snowy path</figcaption>
+            </picture>
+            <picture class='pic7'>
+                <img id='img7' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/sun.jpg' alt='pic7'>
+                <figcaption>Sunny skies</figcaption>
+            </picture>
+            <picture class='pic8'>
+                <img id='img8' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/rain2.jpg' alt='pic8'>
+                <figcaption>Rain of the pavement</figcaption>
+            </picture>
+            <picture class='pic9'>
+                <img id='img9' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/sunlight.jpg' alt='pic9'>
+                <figcaption>Sun rays</figcaption>
+            </picture>
+            <picture class='pic10'>
+                <img id='img10' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/tornado.jpg' alt='pic10'>
+                <figcaption>Tornado touching down</figcaption>
+            </picture>
+            <picture class='pic11'>
+                <img id='img11' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/wave.jpg' alt='pic11'>
+                <figcaption>Wave breaking over a dock</figcaption>
+            </picture>
+            <picture class='pic12'>
+                <img id='img12' src='https://via.placeholder.com/300.png/09f/fff' data-src='images/snowflake.jpg' alt='pic12'>
+                <figcaption>Snowflake close up</figcaption>
+            </picture>
+        </section>
+    </main>
+    <footer>
+        <section class='legal-footer'>
+            <p class='legal'>&copy; <span id='copyrightyear'></span> | Benjamin Vredenburg | Idaho | <a target='_blank' href='https://www.byui.edu'>BYUI</a></p>
+            <p class='updatehistory'>Last Updated: <span id='lastupdated'></span></p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

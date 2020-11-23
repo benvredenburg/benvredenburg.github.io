@@ -1,0 +1,199 @@
+/* Small */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Merriweather", sans-serif;
+}
+
+p {
+    font-family: verdana;
+    line-height: 1.8rem;
+}
+
+header {
+    color: #F97D00;
+    background-color: #0C2F5C;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'Merriweather', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+header img,
+.headings {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.logo {
+    height: 5rem;
+}
+
+.headings h1 {
+    font-size: 20px;
+}
+
+.motto {
+    font-size: .75rem;
+    line-height: 1rem;
+    color: white;
+}
+
+nav {
+    background-color: #6A7B76;
+    color: white;
+    font-size: 1.25rem;
+    line-height: 3rem;
+    font-family: verdana, sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#active {
+    background-color: #F97D00;
+}
+
+li:hover {
+    background-color: #0C2F5C;
+}
+
+li:hover a {
+    color: #F97D00;
+}
+
+#active:hover a {
+    color: #0C2F5C;
+}
+
+.menu {
+    list-style: none;
+    padding-inline-start: 0px;
+    display: none;
+}
+
+.responsive {
+    display: block;
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+#cursor {
+    cursor: pointer;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-banner {
+    background-color: #0C2F5C;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.section-banner h2 {
+    font-size: 34px;
+    text-align: center;
+    color: #F97D00;
+    margin: 0;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+.gallery {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3px;
+}
+
+.gallery picture {
+    justify-self: center;
+}
+
+picture img {
+    width: 95%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.contact {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+}
+
+.contact p {
+    padding-left: 30px;
+    margin: 0;
+}
+
+.contact h3 {
+    background-color: #0C2F5C;
+    color: #F97D00;
+    padding-left: 5px;
+}
+
+.map {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.legal-footer {
+    background-color: #0C2F5C;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.legal-footer a {
+    color: white;
+}
+
+.legal-footer p {
+    font-family: "Merriweather Sans", sans-serif;
+    color: #F97D00;
+    text-align: center;
+}
+
+.social {
+    display: none;
+}
+
+#banner {
+    text-align: center;
+    border: 4px double white;
+    background-color: #0c2f5c;
+    color: yellow;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 10px;
+}

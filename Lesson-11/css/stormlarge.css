@@ -1,0 +1,7 @@
+/* large */
+
+@media screen and (min-width: 886px) {
+    header {
+        font-size: 2rem;
+    }
+}
