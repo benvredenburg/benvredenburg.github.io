@@ -21,8 +21,7 @@ weatherRequest.onload = function() {
     document.getElementById('windspeed').innerHTML = windspeed;
     document.getElementById('windChill').innerHTML = getWindChill();
 
-    document.getElementById('conditions-icon').setAttribute('src', imageConditions + weatherData.weather[0].icon + '.png');
-    document.getElementById('conditions-icon').setAttribute('alt', weatherData.weather[0].description);
+
 }
 
 function getWindChill() {
