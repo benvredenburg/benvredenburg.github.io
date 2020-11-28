@@ -19,6 +19,10 @@ fetch(requestURL)
                 let p3 = document.createElement('p');
                 let p4 = document.createElement('p');
                 let image = document.createElement('img');
+                let eventTitle = document.createElement('h4')
+                let event1 = document.createElement('p');
+                let event2 = document.createElement('p');
+                let event3 = document.createElement('p');
 
                 h2.textContent = towns[i].name;
 
@@ -40,11 +44,30 @@ fetch(requestURL)
 
                 town.appendChild(p4);
 
+                eventTitle.textContent = 'Upcoming Events:';
+
+                town.appendChild(eventTitle);
+
+                event1.textContent = towns[i].events[0];
+
+                town.appendChild(event1);
+
+                event2.textContent = towns[i].events[1];
+
+                town.appendChild(event2);
+
+                event3.textContent = towns[i].events[2];
+
+                town.appendChild(event3);
+
                 document.querySelector('.preston').appendChild(town);
 
                 image.setAttribute('src', 'images/rsz_preston.jpg');
+                image.setAttribute('alt', towns[i].name)
 
                 town.appendChild(image);
+
+
 
 
             }
@@ -56,6 +79,10 @@ fetch(requestURL)
                 let p3 = document.createElement('p');
                 let p4 = document.createElement('p');
                 let image = document.createElement('img');
+                let eventTitle = document.createElement('h4')
+                let event1 = document.createElement('p');
+                let event2 = document.createElement('p');
+                let event3 = document.createElement('p');
 
                 h2.textContent = towns[i].name;
 
@@ -77,9 +104,26 @@ fetch(requestURL)
 
                 town.appendChild(p4);
 
+                eventTitle.textContent = 'Upcoming Events:';
+
+                town.appendChild(eventTitle);
+
+                event1.textContent = towns[i].events[0];
+
+                town.appendChild(event1);
+
+                event2.textContent = towns[i].events[1];
+
+                town.appendChild(event2);
+
+                event3.textContent = towns[i].events[2];
+
+                town.appendChild(event3);
+
                 document.querySelector('.soda-springs').appendChild(town);
 
                 image.setAttribute('src', 'images/rsz_sodasprings.jpg');
+                image.setAttribute('alt', towns[i].name)
 
                 town.appendChild(image);
 
@@ -93,6 +137,10 @@ fetch(requestURL)
                 let p3 = document.createElement('p');
                 let p4 = document.createElement('p');
                 let image = document.createElement('img');
+                let eventTitle = document.createElement('h4')
+                let event1 = document.createElement('p');
+                let event2 = document.createElement('p');
+                let event3 = document.createElement('p');
 
                 h2.textContent = towns[i].name;
 
@@ -114,9 +162,26 @@ fetch(requestURL)
 
                 town.appendChild(p4);
 
+                eventTitle.textContent = 'Upcoming Events:';
+
+                town.appendChild(eventTitle);
+
+                event1.textContent = towns[i].events[0];
+
+                town.appendChild(event1);
+
+                event2.textContent = towns[i].events[1];
+
+                town.appendChild(event2);
+
+                event3.textContent = towns[i].events[2];
+
+                town.appendChild(event3);
+
                 document.querySelector('.fish-haven').appendChild(town);
 
                 image.setAttribute('src', 'images/rsz_fishhaven.jpg');
+                image.setAttribute('alt', towns[i].name)
 
                 town.appendChild(image);
 

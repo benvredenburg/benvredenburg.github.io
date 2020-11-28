@@ -179,6 +179,23 @@ article p {
     color: white;
 }
 
+.events {
+    border: 5px dashed #F97D00;
+    background-color: #0c2f5c;
+    color: white;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 15px;
+    max-width: 1440px;
+}
+
+.events h3 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F97D00;
+    max-width: 400px;
+}
+
 .contact {
     max-width: 960px;
     margin: 0 auto;

@@ -13,60 +13,30 @@
         grid-column: 1/4;
         grid-row: 2;
     }
-    .preston {
+    /* .preston {
         grid-column: 1;
         grid-row: 3;
         padding: 0;
-    }
-    .preston section {
+    } */
+    .town-data section {
+        display: grid;
         grid-template-columns: 1fr;
     }
-    .preston section img {
+    .town-data section h2 {
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+    .town-data section h3 {
+        grid-row: 2;
+        grid-column: 1/3;
+    }
+    .town-data section p {
+        grid-column: 1/3;
+    }
+    .town-data section img {
         grid-column: 1;
-        grid-row: 6;
-        padding-top: 2rem;
-    }
-    .soda-springs {
-        padding: 0;
-        grid-column: 2;
-        grid-row: 3;
-    }
-    .soda-springs section {
-        grid-template-columns: 1fr;
-    }
-    .soda-springs section h2 {
-        grid-column: 1;
-    }
-    .soda-springs section h3 {
-        grid-column: 1;
-        font-size: 12px;
-    }
-    .soda-springs section p:nth-child(1) {
-        grid-column: 1;
-    }
-    .soda-springs section p:nth-child(2) {
-        grid-column: 1;
-    }
-    .soda-springs section p:nth-child(3) {
-        grid-column: 1;
-    }
-    .soda-springs section img {
-        grid-column: 1;
-        grid-row: 6;
-        padding-top: 2rem;
-    }
-    .fish-haven {
-        grid-column: 3;
-        grid-row: 3;
-        padding: 0;
-    }
-    .fish-haven section {
-        grid-template-columns: 1fr;
-    }
-    .fish-haven section img {
-        grid-column: 1;
-        grid-row: 6;
-        padding-top: 2rem;
+        grid-row: 10;
+        padding-top: 1rem;
     }
     main iframe {
         width: 100%;

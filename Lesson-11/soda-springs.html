@@ -10,12 +10,12 @@
     <link href='css/town-large.css' rel='stylesheet'>
     <script src='js/hamburgermenu.js'></script>
     <script src='js/date.js'></script>
-    <script src='js/preston-weather.js'></script>
-    <script src='js/preston-events.js'></script>
+    <script src='js/soda-springs-weather.js'></script>
+    <script src='js/soda-events.js'></script>
     <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap' rel='stylesheet'>
     <link rel='shortcut icon' href='images/favicon.ico'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Preston, ID</title>
+    <title>Soda Springs, ID</title>
 </head>
 
 <body>
@@ -32,8 +32,8 @@
         <div id='cursor'><a id='menu-link' onclick='hamburgerMenu()'>☰ Menu</a></div>
         <ul class='menu'>
             <li><a href='index.html'>Home</a></li>
-            <li id='active'><a href='preston.html'>Preston</a></li>
-            <li><a href='soda-springs.html'>Soda Springs</a></li>
+            <li><a href='preston.html'>Preston</a></li>
+            <li id='active'><a href='soda-springs.html'>Soda Springs</a></li>
             <li><a href='fish-haven.html'>Fish Haven</a></li>
             <li><a href='stormcenter.html'>Storm Center</a></li>
             <li><a href='gallery.html'>Gallery</a></li>
@@ -43,13 +43,13 @@
 
     <main>
         <h1>
-            Preston
+            Soda Springs
         </h1>
         <section class='hero-container'>
             <picture class='hero-image'>
-                <source media='(max-width: 500px)' srcset='images/preston500.jpg'>
-                <source media='(max-width: 800px)' srcset='images/preston800.jpg'>
-                <img src='images/preston1100.jpg' alt='hero-img'>
+                <source media='(max-width: 500px)' srcset='images/soda-springs500.jpg'>
+                <source media='(max-width: 800px)' srcset='images/soda-springs800.jpg'>
+                <img src='images/soda-springs1100.jpg' alt='hero-img'>
             </picture>
             <section class='weather-summary-container'>
                 <h2>Weather Summary</h2>
@@ -73,6 +73,7 @@
                     <strong>Wind Speed:</strong>
                     <span id='windspeed'></span> MPH
                 </p>
+
             </section>
         </section>
         <section class='five-day-forecast'>
@@ -121,9 +122,9 @@
             <h3 id='credit'>Weather information provided by <a target='blank_' href='https://openweathermap.org/'>OpenWeatherMap.org</a></h3>
         </section>
         <article>
-            <img class='art-img' src='images/fall.jpg' alt='art-img'>
-            <h2>Days of Summer make way for Fall</h2>
-            <h4>by John Wick</h4>
+            <img class='art-img' src='images/snow.jpg' alt='art-img'>
+            <h2>Winter Wonderland</h2>
+            <h4>by Elvis Presley</h4>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar nisi id efficitur rutrum. Nunc sodales congue magna, venenatis sodales turpis suscipit nec. Nullam facilisis vulputate magna sit amet congue. Nullam in enim elit. In vitae congue
                 mauris, venenatis pretium ipsum. Quisque et gravida turpis. Pellentesque quis tortor et lectus tempus blandit ut id justo. Sed viverra diam a eros gravida gravida in eget elit. Phasellus mollis et velit a condimentum. Nulla eleifend imperdiet
@@ -134,7 +135,8 @@
                 tellus ultricies, non maximus est posuere. Nunc molestie augue nisi, ac congue ipsum commodo vel. Pellentesque imperdiet accumsan nibh vitae bibendum. Nunc aliquet mattis lobortis. In hac habitasse platea dictumst. Curabitur tortor.
             </p>
         </article>
-        <div class='preston events'></div>
+        <div class='soda-springs events'></div>
+
     </main>
 
     <footer>
@@ -145,8 +147,8 @@
             <p class='adress'> 📍 555 Main Avenue, Preston, ID 83440</p>
             <p class='email'>✉ contact@vredenburgforecast.news</p>
             <p class='phone'>☎ (555)555-5555</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23682.87354293667!2d-111.89783454312985!3d42.0997774615348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1605293477512!5m2!1sen!2sus"
-                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23471.96689916751!2d-111.60628159255798!3d42.66144307556817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1606511074045!5m2!1sen!2sus"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <section class='social'>
                 <a target="_blank" href='https://instagram.com' class='insta'> <img src='images/instagram.png'></a>
                 <a target="_blank" href='https://facebook.com' class='face'> <img src='images/facebook.png'></a>

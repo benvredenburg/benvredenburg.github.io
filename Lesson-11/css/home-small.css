@@ -142,6 +142,47 @@ li:hover a {
     width: 95%;
 }
 
+.town-data {
+    display: grid;
+    background-color: #0C2F5C;
+    padding: 1rem;
+    border: 3px solid #F97D00;
+}
+
+.town-data section h2 {
+    color: #F97D00;
+    padding-top: 25px;
+}
+
+.town-data section h3 {
+    color: #6A7B76;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.town-data section p {
+    color: white;
+}
+
+.town-data section h4 {
+    color: white;
+    margin-top: 20px;
+    grid-column: 1/3;
+}
+
+.town-data section p:nth-child(7),
+.town-data section p:nth-child(8),
+.town-data section p:nth-child(9) {
+    grid-column: 1/3;
+}
+
+.town-data section img {
+    max-width: 85%;
+    box-shadow: 1rem 1rem .5rem black;
+    align-self: center;
+}
+
 .preston section {
     grid-row: 3;
     display: grid;
@@ -158,28 +199,12 @@ li:hover a {
     grid-row: 2;
 }
 
-.preston section p:nth-child(1) {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.preston section p:nth-child(2) {
-    grid-column: 1;
-    grid-row: 4;
-}
-
-.preston section p:nth-child(3) {
-    grid-column: 1;
-    grid-row: 5;
-}
-
 .preston section img {
     grid-column: 2;
     grid-row: 1/6;
 }
 
 .soda-springs section {
-    grid-row: 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -192,21 +217,6 @@ li:hover a {
 .soda-springs section h3 {
     grid-column: 2;
     grid-row: 2;
-}
-
-.soda-springs section p:nth-child(1) {
-    grid-column: 2;
-    grid-row: 3;
-}
-
-.soda-springs section p:nth-child(2) {
-    grid-column: 2;
-    grid-row: 4;
-}
-
-.soda-springs section p:nth-child(3) {
-    grid-column: 2;
-    grid-row: 5;
 }
 
 .soda-springs section img {
@@ -230,21 +240,6 @@ li:hover a {
     grid-row: 2;
 }
 
-.fish-haven section p:nth-child(1) {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.fish-haven section p:nth-child(2) {
-    grid-column: 1;
-    grid-row: 4;
-}
-
-.fish-haven section p:nth-child(3) {
-    grid-column: 1;
-    grid-row: 5;
-}
-
 .fish-haven section img {
     grid-column: 2;
     grid-row: 1/6;
@@ -263,34 +258,6 @@ main iframe {
     border: 3px double #F97D00;
     width: auto;
     padding: 1rem;
-}
-
-.town-data {
-    background-color: #0C2F5C;
-    padding: 1rem;
-    border: 3px solid #F97D00;
-}
-
-.town-data section h2 {
-    color: #F97D00;
-    padding-top: 25px;
-}
-
-.town-data section h3 {
-    color: #6A7B76;
-    padding-top: 2px;
-    padding-bottom: 10px;
-    font-size: 16px;
-}
-
-.town-data section p {
-    color: white;
-}
-
-.town-data section img {
-    max-width: 85%;
-    box-shadow: 1rem 1rem .5rem black;
-    align-self: center;
 }
 
 .image-caption p {

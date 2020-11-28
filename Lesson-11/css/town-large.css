@@ -10,6 +10,9 @@
         header {
             font-size: 2rem;
         }
+        .five-day-forecast {
+            width: 45rem;
+        }
         .weather-summary-container {
             top: 2rem;
             left: 3rem;
