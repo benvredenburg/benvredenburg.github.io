@@ -179,6 +179,14 @@ article p {
     color: white;
 }
 
+article a {
+    color: white;
+}
+
+article a:visited {
+    color: white;
+}
+
 .events {
     border: 5px dashed #F97D00;
     background-color: #0c2f5c;
