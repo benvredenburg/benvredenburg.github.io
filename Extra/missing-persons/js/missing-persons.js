@@ -1,5 +1,5 @@
 async function getperson() {
-    const requestURL = 'https://www.ahfx.com/person.php';
+    const requestURL = 'https://benvredenburg.github.io/Extra/missing-persons/js/person.json';
 
     const response = await fetch(requestURL)
         .then(function(response) {
