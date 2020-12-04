@@ -1,13 +1,10 @@
 async function getperson() {
-    // const requestURL = 'js/person.json';
-    const requestURL = 'https://benvredenburg.github.io/Extra/missing-persons/js/person.json'
+    const requestURL = 'https://benvredenburg.github.io/Extra/missing-persons/js/person.json';
 
     const response = await fetch(requestURL)
         .then(function(response) {
             if (response.status == 200) {
-
                 return response.json();
-
             } else {
                 throw new Error("No towns found: " + response.status)
             }
