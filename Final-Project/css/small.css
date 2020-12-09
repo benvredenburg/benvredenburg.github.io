@@ -127,6 +127,11 @@ button:hover {
 
 /*Index Page*/
 
+.book {
+    width: 150px;
+    margin: 0 auto;
+}
+
 .home-quote {
     padding: 5px 3rem 5px 3rem;
     font-family: 'Great Vibes', cursive, sans-serif;
