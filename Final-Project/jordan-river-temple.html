@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <title>Temple Inn & Suites | Jordan River Temple</title>
+    <meta name='description' content='Information regarding the Jordan River Temple.'>
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link rel='stylesheet' href='css/small.css'>
+    <link rel='stylesheet' media='screen and (min-width: 700px)' href='css/medium.css'>
+    <link rel='stylesheet' media='screen and (min-width: 860px)' href='css/large.css'>
+    <script src='js/copyright.js'></script>
+    <script src='js/menu-script.js'></script>
+    <script src='js/jordan-river-data.js'></script>
+</head>
+
+<body>
+    <header>
+        <img src='images/logo.png' alt='Temple Inn & Suites Logo' class='logo'>
+        <h1>Temple Inn & Suites</h1>
+    </header>
+
+    <nav>
+        <a id='menu-link' onclick='hamburgerMenu()'>☰ Menu</a>
+        <ul class='menu'>
+            <li><a href='index.html'>Home</a></li>
+            <li id='current-page'><a href='temples.html'>Temples</a></li>
+            <li><a href='guest-portal.html'>Guest Portal</a></li>
+            <li><a href='reservation.html'>Book Reservation</a></li>
+            <li><a href='policies.html'>Guest Policies</a></li>
+            <li><a href='contact.html'>Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class='threeColumn'>
+            <section class='bubble'>
+                <h2>Jordan River Temple</h2>
+                <picture id='templeImage'></picture>
+                <ul>
+                    <li>
+                        <h3>Contact</h3>
+                    </li>
+                    <li><strong>Phone:</strong> <span id='phone'></span></li>
+                    <li><strong>Location:</strong> <span id='address'></span></li>
+                    <li><strong>Description:</strong> <span id='description'></span></li>
+                </ul>
+            </section>
+
+            <section class='temple-page-bubble' id='item1'>
+                <h3>Services</h3>
+                <ul id='services'>
+                </ul>
+            </section>
+
+            <section class='temple-page-bubble' id='item2'>
+                <h3>Ordinance Schedule</h3>
+                <ul id='ordinances'>
+                </ul>
+            </section>
+
+            <section class='temple-page-bubble' id='item3'>
+                <h3>Scheduled Closures</h3>
+                <ul id='closures'>
+                </ul>
+            </section>
+        </section>
+
+
+
+
+
+        <section class='center'>
+            <a href='salt-lake-temple.html'>Salt Lake Temple</a> |
+            <a href='jordan-river-temple.html'>Jordan River Temple</a> |
+            <a href='seattle-temple.html'>Seattle Temple</a> |
+            <a href='rexburg-temple.html'>Rexburg Temple</a>
+        </section>
+        <section>
+            <h3>Please Note</h3>
+            <p>
+                While every effort is made to be sure that the information on this page is up to date, we cannot guarantee its accuracy. Please visit the official Church website for the most current information.
+                <a href='https://www.lds.org/temples/list?lang=eng'>Click Here</a> for the official Church list.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p class='legal'>&copy; <span id='copyrightyear'></span> | Temple Inn & Suites | <a href='contact.html'>Contact Us</a> | <a href='policies.html'>Guest
+            Policies</a>
+    </footer>
+</body>
+
+</html>

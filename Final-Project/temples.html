@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temple Inn & Suites | Temples</title>
+    <meta name="description" content="Information regarding Temple locations near Temple Inn & Suites.">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 700px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 860px)" href="css/large.css">
+    <script src="js/copyright.js"></script>
+    <script src="js/main-script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Temple Inn & Suites Logo" class="logo">
+        <h1>Temple Inn & Suites</h1>
+    </header>
+
+    <nav>
+        <a id="menu-link" onclick="hamburgerMenu()">☰ Menu</a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li id="current-page"><a href="temples.html">Temples</a></li>
+            <li><a href="guest-portal.html">Guest Portal</a></li>
+            <li><a href="reservation.html">Book Reservation</a></li>
+            <li><a href="policies.html">Guest Policies</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Temples</h2>
+        <p>
+            While we hope to someday service Temple patrons at every Temple location, we currently only service four areas. Please see the visit the pages below for more details on each Temple.
+        </p>
+        <section class="temple-quote">
+            "And they pitched their tents round about the temple, every man having his tent with the door thereof towards the temple..." - Mosiah 2:6
+        </section>
+        <section class="spotlight">
+            <span class="prev" onclick="plusSlides(-1)">&#9664;</span> <span class="next" onclick="plusSlides(1)">&#9654;</span>
+            <section class="mySlides">
+                <picture>
+                    <source srcset="images/salt-lake-temple-small.jpg" media="(max-width: 700px)">
+                    <img src="images/salt-lake-temple-large.jpg" alt="A view of the Salt Lake Utah Temple">
+                </picture>
+                <h3>Salt Lake, Utah Temple</h3>
+                <p>
+                    Plans to construct the temple were announced July 28, 1847. Brigham Young, president of The Church of Jesus Christ of Latter-day Saints from 1847 to 1877, broke ground February 14, 1853, and Wilford Woodruff, Church president from 1889 to 1898, dedicated
+                    the Salt Lake Temple April 6, 1893. The temple serves Latter-day Saints in Salt Lake City, Tooele and eastern Nevada.
+                </p>
+                <form action="salt-lake-temple.html">
+                    <button>Visit Temple Page</button>
+                </form>
+            </section>
+
+            <section class="mySlides">
+                <picture>
+                    <source srcset="images/jordan-river-temple-small.jpg" media="(max-width: 700px)">
+                    <img src="images/jordan-river-temple-large.jpg" alt="A view of the Jordan River Utah Temple">
+                </picture>
+                <h3>Jordan River, Utah Temple</h3>
+                <p>
+                    Plans to construct the temple were announced 3 February 1978, Church leaders broke ground 9 June 1979, and President Marion G. Romney, a counselor in the First Presidency of The Church of Jesus Christ of Latter-day Saints, dedicated the Jordan River Utah
+                    Temple 16 November 1981. The temple serves Latter-day Saints in the southern valley of Salt Lake County.
+                </p>
+                <form action="jordan-river-temple.html">
+                    <button>Visit Temple Page</button>
+                </form>
+            </section>
+
+            <section class="mySlides">
+                <picture>
+                    <source srcset="images/seattle-temple-small.jpg" media="(max-width: 700px)">
+                    <img src="images/seattle-temple-large.jpg" alt="A view of the Draper Utah Temple">
+                </picture>
+                <h3>Seattle, Washington Temple</h3>
+                <p>
+                    Plans to construct the temple were announced 15 November 1975, Church leaders broke ground 27 May 1978, and Spencer W. Kimball, president of The Church of Jesus Christ of Latter-day Saints from 1973 to 1985, dedicated the Seattle Washington Temple 17
+                    November 1980. The temple serves Latter-day Saints in western Washington.
+                </p>
+                <form action="seattle-temple.html">
+                    <button>Visit Temple Page</button>
+                </form>
+            </section>
+
+            <section class="mySlides">
+                <picture>
+                    <source srcset="images/rexburg-temple-small.jpg" media="(max-width: 700px)">
+                    <img src="images/rexburg-temple-large.jpg" alt="Temple Image coming soon">
+                </picture>
+                <h3>Rexburg, Idaho Temple</h3>
+                <p>
+                    Plans to construct the temple were announced 12 December 2003, Church leaders broke ground 30 July 2005, and Thomas S. Monson, president of The Church of Jesus Christ of Latter-day Saints, dedicated the Rexburg Idaho Temple 10 February 2008. The temple
+                    serves Latter-day Saints in Rexburg and eastern Idaho.
+                </p>
+                <form action="rexburg-temple.html">
+                    <button>Visit Temple Page</button>
+                </form>
+            </section>
+        </section>
+        <br>
+        <div class="dotbox">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <section class="center">
+            <a href="salt-lake-temple.html">Salt Lake Temple</a> |
+            <a href="jordan-river-temple.html">Jordan River Temple</a> |
+            <a href="seattle-temple.html">Seattle</a> |
+            <a href="rexburg-temple.html">Rexburg</a>
+        </section>
+    </main>
+    <footer>
+        <p class='legal'>&copy; <span id='copyrightyear'></span> | Temple Inn & Suites | <a href="contact.html">Contact Us</a> | <a href="policies.html">Guest
+            Policies</a>
+    </footer>
+</body>
+
+</html>

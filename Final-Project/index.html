@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temple Inn & Suites | Home</title>
+    <meta name="description" content="Home of Temple Inn & Suites">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 700px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 860px)" href="css/large.css">
+    <script src="js/main-script.js"></script>
+    <script src="js/copyright.js"></script>
+</head>
+
+<body>
+    <picture>
+        <source srcset="images/abor-large-01.svg" media="(max-width: 600px)">
+        <img class="hero-img" src="images/abor-large-02.svg" alt="A peaceful bench in the Inn Gardens">
+    </picture>
+    <header>
+        <img src="images/logo.png" alt="Temple Inn & Suites Logo" class="logo">
+        <h1>Temple Inn & Suites</h1>
+    </header>
+
+    <nav>
+        <a id="menu-link" onclick="hamburgerMenu()">☰ Menu</a>
+        <ul class="menu">
+            <li id="current-page"><a href="#">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="guest-portal.html">Guest Portal</a></li>
+            <li><a href="reservation.html">Book Reservation</a></li>
+            <li><a href="policies.html">Guest Policies</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main class='main-grid'>
+        <section class='welcome-wrap'>
+            <h2>Welcome to Temple Inn & Suites</h2>
+            <p>
+                Our goal is to make your stay as comfortable and stress free as possible. Whether you come for a few days to participate in a family members' wedding, or longterm as you serve as a Temple Worker. We are conveniently located within walking distance ofthe
+                Temple you are here to visit. Please visit our guest portal to learn more about accomodations and services at a Temple Inn near you.
+            </p>
+        </section>
+        <h4 class='home-quote'>“Come unto me, all ye that labour and are heavy laden, and I will give you rest...” - Matthew 11:28</h4>
+        <section class="hero-image">
+            <source srcset="images/hotel-small.jpg" media="(max-width: 700px)">
+            <img class="hero-img" src="images/hotel-small.jpg" alt="A peaceful bench in the Inn Gardens">
+
+            <form action="reservation.html"><button>Book Now!</button></form>
+
+        </section>
+
+        <section class="featured-wrap">
+            <h2>Featured Temple</h2>
+            <picture id="featuredImage">
+                <source srcset="images/seattle-temple-small.jpg" media="(max-width: 700px)">
+                <img src="images/seattle-temple-large.jpg" class="featured" alt="A view of the Seattle Temple">
+            </picture>
+            <h3 id="featuredTitle">Seattle</h3>
+            <p id="featuredDescription">Plans to construct the Seattle temple were announced 15 November 1975, Church leaders broke ground 27 May 1978, and Spencer W. Kimball, president of The Church of Jesus Christ of Latter-day Saints from 1973 to 1985, dedicated the Seattle Washington
+                Temple 17 November 1980. The temple serves Latter-day Saints in western Washington.</p>
+            <form action="temples.html"><button>More Temples</button></form>
+        </section>
+    </main>
+
+    <footer>
+        <p class='legal'>&copy; <span id='copyrightyear'></span> | Temple Inn & Suites | <a href="contact.html">Contact Us</a> | <a href="policies.html">Guest
+            Policies</a>
+    </footer>
+
+
+</body>
+
+</html>

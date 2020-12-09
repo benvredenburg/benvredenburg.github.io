@@ -1,0 +1,93 @@
+{
+    "temples": [{
+            "imageSrc": "images/seattle-temple-large.jpg",
+            "imageSrcSmall": "images/seattle-temple-small.jpg",
+            "imageAlt": "A view of the Seattle Temple",
+            "name": "Seattle",
+            "description": "Plans to construct the temple were announced 15 November 1975, Church leaders broke ground 27 May 1978, and Spencer W. Kimball, president of The Church of Jesus Christ of Latter-day Saints from 1973 to 1985, dedicated the Seattle Washington Temple 17 November 1980. The temple serves Latter-day Saints in western Washington.",
+            "phoneNumber": "(+1) 425-643-5144",
+            "streetAddress": "2808 148th Ave SE",
+            "cityState": "Bellevue, Washington",
+            "zip": "98007-6453",
+            "ordinanceSchedule": [
+                "The Seattle Temple is currently only open for living ordinances. Please contact the Temple directly to make an appointment."
+            ],
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "closures": [
+                "The Seattle Temple is currently only open for living ordinances. Please contact the Temple directly to make an appointment."
+            ]
+        },
+        {
+            "imageSrc": "images/jordan-river-temple-large.jpg",
+            "imageSrcSmall": "images/jordan-river-temple-small.jpg",
+            "imageAlt": "A view of the Jordan River Temple",
+            "name": "Jordan River",
+            "description": "Plans to construct the temple were announced 3 February 1978, Church leaders broke ground 9 June 1979, and President Marion G. Romney, a counselor in the First Presidency of The Church of Jesus Christ of Latter-day Saints, dedicated the Jordan River Utah Temple 16 November 1981. The temple serves Latter-day Saints in the southern valley of Salt Lake County.",
+            "phoneNumber": "(+1) 801-254-3003",
+            "streetAddress": "10200 South Temple Dr.",
+            "cityState": "South Jordan, Utah",
+            "zip": "84095-8814",
+            "ordinanceSchedule": [
+                "The Jordan River Temple is currently only open for living ordinances. Please contact the Temple directly to make an appointment."
+            ],
+            "services": [
+                "Clothing rental available",
+                "Cafeteria food served",
+                "No patron housing available",
+                "No distribution store nearby"
+            ],
+            "closures": [
+                "The Jordan River Temple is currently only open for living ordinances. Please contact the Temple directly to make an appointment."
+            ]
+        },
+        {
+            "imageSrc": "images/salt-lake-temple-large.jpg",
+            "imageSrcSmall": "images/salt-lake-temple-small.jpg",
+            "imageAlt": "A view of the Salt Lake Temple",
+            "name": "Salt Lake",
+            "description": "Plans to construct the temple were announced July 28, 1847. Brigham Young, president of The Church of Jesus Christ of Latter-day Saints from 1847 to 1877, broke ground February 14, 1853, and Wilford Woodruff, Church president from 1889 to 1898, dedicated the Salt Lake Temple April 6, 1893. The temple serves Latter-day Saints in Salt Lake City, Tooele and eastern Nevada.",
+            "phoneNumber": "(+1) 801-240-2640",
+            "streetAddress": "50 West North Temple St",
+            "cityState": "Salt Lake City, Utah",
+            "zip": "84150-0701",
+            "ordinanceSchedule": [
+                "The Salt Lake Temple is closed for renovation"
+            ],
+            "services": [
+                "The Salt Lake Temple is closed for renovation"
+            ],
+            "closures": [
+                "The Salt Lake Temple is closed for renovation"
+            ]
+        },
+        {
+            "imageSrc": "images/rexburg-temple-large.jpg",
+            "imageSrcSmall": "images/rexburg-temple-small.jpg",
+            "imageAlt": "A view of the Rexburg Temple",
+            "name": "Rexburg",
+            "description": "Plans to construct the temple were announced 12 December 2003, Church leaders broke ground 30 July 2005, and Thomas S. Monson, president of The Church of Jesus Christ of Latter-day Saints, dedicated the Rexburg Idaho Temple 10 February 2008. The temple serves Latter-day Saints in Rexburg and eastern Idaho.",
+            "phoneNumber": "(+1) 208-656-0880",
+            "streetAddress": "750 S 2nd E",
+            "cityState": "Rexburg, Idaho",
+            "zip": "83440-5404",
+            "ordinanceSchedule": [
+                "The Rexburg Temple is currently only open for living ordinances. Please contact the Temple directly to make an appointment."
+            ],
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "closures": [
+                "The Rexburg Temple is currently only open for living ordinances. Please contact the Temple directly to make an appointment."
+            ]
+        }
+
+    ]
+}

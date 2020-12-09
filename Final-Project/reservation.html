@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temple Inn & Suites | Book Reservation</title>
+    <meta name="description" content="Book your room or suite on this page.">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 700px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 860px)" href="css/large.css">
+    <script src="js/copyright.js"></script>
+    <script src="js/menu-script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Temple Inn & Suites Logo" class="logo">
+        <h1>Temple Inn & Suites</h1>
+    </header>
+
+    <nav>
+        <a id="menu-link" onclick="hamburgerMenu()">☰ Menu</a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="guest-portal.html">Guest Portal</a></li>
+            <li id="current-page"><a href="reservation.html">Book Reservation</a></li>
+            <li><a href="policies.html">Guest Policies</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Book Your Reservation</h2>
+            <p>Rooms and suites are available on a first-come, first-serve basis (with the exception of Temple workers and their families, to whom we give priority). It is recommended to make reservations at least 6 months in advance of your special event.
+                Please fill out the form below and include details about your planned visit that may help a representative best know how to serve you. We will contact you within 3 days of your inquiry with information on what is available, as well as
+                costs.
+            </p>
+        </section>
+        <section>
+            <form class="contact-form" action="thanks.html">
+                <h3>Reservation Inquiry</h3>
+                <ul class="form-shell">
+                    <li>
+                        <label for="name">Full Name*</label>
+                        <input type="text" id="name" minlength="2" maxlength="50" size="20" required pattern="[A-Z][A-Za-z' -]+">
+                    </li>
+                    <li>
+                        <label for="phone">Phone*</label>
+                        <input type="tel" id="phone" name="tel" required minlength="10">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="address@domain.com">
+                    </li>
+                    <li>
+                        <label for="area">Area:</label>
+                        <select id="area">
+                            <option selected disabled>Select Area...</option>
+                            <option value="saltlake">Salt Lake Temple</option>
+                            <option value="jordanriver">Jordan River Temple</option>
+                            <option value="draper">Seattle Temple</option>
+                            <option value="tooele">Rexburg Temple</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="6" placeholder="Use this field to enter details about your planned stay, such as special accommodations and/or dietary needs, number of guests and rooms desired."></textarea>
+                    </li>
+                    <li>
+                        <p>Dates of Interest (Range)</p>
+                        <li>
+                            <label for="startDate">From*</label>
+                            <input type="date" id="startDate" name="startDate" required>
+                        </li>
+                        <li>
+                            <label for="endDate">To*</label>
+                            <input type="date" id="endDate" name="endDate" max="2020-12-31" required>
+                        </li>
+                        <li>
+                            <p>Rooms or Suite?</p>
+                            <ul class="form-skin">
+                                <li>
+                                    <label for="room">Room(s)</label>
+                                    <input type="radio" id="room" name="choice" value="room" checked>
+                                </li>
+                                <li>
+                                    <label for="suite">Suite</label>
+                                    <input type="radio" id="suite" name="choice" value="suite">
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p>Number of expected guests (estimate)</p>
+                            <ul class="form-skin">
+                                <li>
+                                    <label for="option1">1 - 2</label>
+                                    <input type="radio" id="option1" name="guests" value="1 - 2" checked>
+                                </li>
+                                <li>
+                                    <label for="option2">3 - 6</label>
+                                    <input type="radio" id="option2" name="guests" value="3 - 6">
+                                </li>
+                                <li>
+                                    <label for="option3">7 - 12</label>
+                                    <input type="radio" id="option3" name="guests" value="7 - 12">
+                                </li>
+                                <li>
+                                    <label for="option4">12+</label>
+                                    <input type="radio" id="option4" name="guests" value="12+">
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <p>Preferred method of contact? (Please check all that apply)</p>
+                            <ul class="form-meat">
+                                <li>
+                                    <input type="checkbox" id="email-pref">
+                                    <label for="email-pref">Email</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="phone-pref">
+                                    <label for="phone-pref">Phone</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="text-pref">
+                                    <label for="text-pref">Text</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="other-pref">
+                                    <label for="other-pref">Other (Please specify in comments)</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="submit">Submit</button>
+                        </li>
+                </ul>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class='legal'>&copy; <span id='copyrightyear'></span> | Temple Inn & Suites | <a href="contact.html">Contact Us</a> | <a href="policies.html">Guest
+            Policies</a>
+    </footer>
+</body>
+
+</html>

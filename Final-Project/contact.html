@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temple Inn & Suites | Contact</title>
+    <meta name="description" content="Contact page for questions unrelated to booking.">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 700px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 860px)" href="css/large.css">
+    <script src="js/copyright.js"></script>
+    <script src="js/menu-script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Temple Inn & Suites Logo" class="logo">
+        <h1>Temple Inn & Suites</h1>
+    </header>
+
+    <nav>
+        <a id="menu-link" onclick="hamburgerMenu()">☰ Menu</a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="guest-portal.html">Guest Portal</a></li>
+            <li><a href="reservation.html">Book Reservation</a></li>
+            <li><a href="policies.html">Guest Policies</a></li>
+            <li id="current-page"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Questions? Comments? Concerns? We would love to hear from you. Please fill out the form below and we will get back to you as soon as possible. </p>
+        </section>
+        <section class="two-column">
+            <div id="contact-us-map">
+                <h3>Our Headquarters</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370328715!2d-77.09772584976109!3d38.98325594938469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1555011949251!5m2!1sen!2sus"
+                    title="Google maps depicting our home location" allowfullscreen=""></iframe>
+            </div>
+
+            <div id="contact-us-form">
+                <h3>Contact Form</h3>
+                <form class="contact-form" action="thanks.html">
+                    <ul class="form-shell">
+                        <li>
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" minlength="2" maxlength="50" size="20" required="" pattern="[A-Z][A-Za-z' -]+" data-nlok-ref-guid="8bbafd72-053e-4a96-c0dc-96e73ac77173">
+                            <div id="norton-idsafe-field-styling-divId" style="height:13.090909090909092px;max-width:13.090909090909092px;vertical-align:top; position:absolute; top:432.97017045454544px;left:1096.3042521994137px;cursor:pointer;resize: both;z-index:2147483646;"><img id="norton-idsafe-field-logo-imgId" src="chrome-extension://admmjipmmciaobhojoghlmleefbicajg/content/images/ic-field-logo.svg" style="height:13.090909090909092px; max-width:13.090909090909092px;"></div>
+                        </li>
+                        <li>
+                            <label for="phone">Phone*</label>
+                            <input type="tel" id="phone" name="tel" required="" minlength="10">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="address@domain.com">
+                        </li>
+                        <li>
+                            <label for="message">Message (max 500 characters)</label>
+                            <textarea name="message" id="message" rows="6" maxlength="500" placeholder="Please give us a brief idea of what your inquiry is about and a representative will contact you."></textarea>
+                        </li>
+                        <li>
+                            <p>Preferred method of contact? (Please check all that apply)</p>
+                            <ul class="form-meat">
+                                <li>
+                                    <input type="checkbox" id="email-pref">
+                                    <label for="email-pref">Email</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="phone-pref">
+                                    <label for="phone-pref">Phone</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="text-pref">
+                                    <label for="text-pref">Text</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="other-pref">
+                                    <label for="other-pref">Other (Please specify in comments)</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="submit" data-nlok-ref-guid="55998c64-0ea5-46b6-aeb0-249b265a6da7">Submit</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p class='legal'>&copy; <span id='copyrightyear'></span> | Temple Inn & Suites | <a href="contact.html">Contact Us</a> | <a href="policies.html">Guest
+            Policies</a>
+    </footer>
+
+
+</body>
+
+</html>

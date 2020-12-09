@@ -1,0 +1,89 @@
+/*All pages*/
+
+body {
+    margin: 0 auto;
+    max-width: none;
+}
+
+nav li a {
+    font-size: .7rem;
+    margin: 0 25px 0 25px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/*Index Page*/
+
+.featured-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.featured-wrap h2 {
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+.featured-wrap h3 {
+    color: #1084A1;
+}
+
+#featuredImage {
+    grid-row: 2/5;
+    grid-column: 1;
+    width: 98%;
+    padding: 2%;
+}
+
+
+/*Guest Portal Page*/
+
+.inner-wrap {
+    max-width: 800px;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    max-width: 800px;
+}
+
+
+/*Temples Page*/
+
+.mySlides {
+    max-width: 900px;
+}
+
+.mySlides picture img {
+    max-width: 860px;
+}
+
+
+/*Contact Page*/
+
+iframe {
+    width: 100%;
+    height: 85%;
+}
+
+
+/*Media Queries*/
+
+@media screen and (min-width: 960px) {
+    nav li a {
+        font-size: .8rem;
+        margin: 0 25px 0 25px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    nav li a {
+        font-size: 1rem;
+        margin: 0 25px 0 25px;
+    }
+}

@@ -1,0 +1,161 @@
+/*All pages*/
+
+body {
+    margin: 0 auto;
+    max-width: 860px;
+}
+
+#menu-link {
+    display: none;
+}
+
+nav {
+    font-size: 1.5em;
+    line-height: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0px;
+}
+
+nav a {
+    margin: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav li:hover {
+    background-color: #EBEBEB;
+}
+
+nav li a {
+    display: block;
+    color: #1084a1;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+nav li:hover a {
+    color: #FFAD05;
+}
+
+#current-page a:hover {
+    color: #EBEBEB;
+}
+
+.menu {
+    list-style: none;
+    display: inline;
+}
+
+footer {
+    font-size: 1.1rem;
+}
+
+
+/*Index Page*/
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-quote {
+    background-color: #1084a1;
+    color: #FFAD05;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 75px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.welcome-wrap {
+    border: 5px solid #1084a1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
+.featured-wrap {
+    grid-column: 1/3;
+}
+
+.featured {
+    width: 98%;
+}
+
+
+/*Temples Page*/
+
+.spotlight {
+    grid-template-columns: auto 1fr auto;
+}
+
+.mySlides {
+    max-width: 860px;
+}
+
+.mySlides picture img {
+    margin-top: 25px;
+    max-width: 600px;
+}
+
+
+/*Individual Temple Pages*/
+
+section.threeColumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    max-width: 1440px;
+}
+
+#item1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#item2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#item3 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#item1,
+#item2,
+#item3 {
+    width: 70%;
+}
+
+
+/*Guest Portal Page*/
+
+.two-column {
+    max-width: 600px;
+}
+
+.inner-wrap {
+    max-width: 600px;
+}
